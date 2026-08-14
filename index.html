@@ -840,9 +840,290 @@
     .price-card{padding:30px 22px}
   }
 
+
+  .nav-contact{display:flex;align-items:center;gap:18px}
+  .nav-contact>a:first-child{
+    font-family:'IBM Plex Mono';font-size:12px;color:var(--muted-dark);
+    transition:.2s ease;
+  }
+  .nav-contact>a:first-child:hover{color:var(--teal-2)}
+  .footer-contact{display:flex;align-items:center;gap:24px}
+  .footer-contact>a:first-child{
+    color:var(--muted);font-family:'IBM Plex Mono';font-size:12.5px;
+  }
+  .footer-contact>a:first-child:hover{color:var(--paper)}
+  @media(max-width:700px){
+    .nav-contact>a:first-child{display:none}
+    .footer-contact{flex-direction:column;align-items:flex-start;gap:8px}
+  }
+
+
+  .cta-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+  .cta-email{border-color:rgba(241,237,227,.45);color:var(--paper)}
+  .cta-email:hover{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+
+
+  /* =========================================================
+     NiaCloud 2.0 UX / UI
+     ========================================================= */
+  .nav{box-shadow:0 1px 0 rgba(13,26,38,.05)}
+  .nav-inner{gap:24px}
+  .logo{white-space:nowrap}
+  .logo b{font-weight:400;color:var(--muted-dark)}
+  .desktop-nav{display:flex;align-items:center;gap:26px;margin-left:auto}
+  .desktop-nav a{
+    font-size:12px;font-weight:600;color:var(--muted-dark);
+    position:relative;padding:8px 0;
+  }
+  .desktop-nav a::after{
+    content:'';position:absolute;left:0;right:100%;bottom:2px;height:2px;
+    background:var(--teal-2);transition:.25s ease;
+  }
+  .desktop-nav a:hover{color:var(--ink)}
+  .desktop-nav a:hover::after{right:0}
+  .nav-contact{margin-left:0}
+  .nav-email{font-family:'IBM Plex Mono';font-size:11px;color:var(--muted-dark)}
+  .nav-email:hover{color:var(--teal-2)}
+  .nav-cta{display:inline-flex;align-items:center;gap:7px}
+  .nav-cta i{font-size:15px}
+  .menu-toggle{display:none;border:0;background:var(--ink);color:var(--paper);width:42px;height:42px;border-radius:50%;font-size:21px}
+  .mobile-menu{
+    display:none;padding:10px 20px 20px;border-top:1px solid var(--line-dark);
+    background:rgba(241,237,227,.96);backdrop-filter:blur(14px);
+  }
+  .mobile-menu a{display:block;padding:13px 0;border-bottom:1px solid var(--line-dark);font-weight:600}
+  .mobile-menu.open{display:block}
+
+  .hero-sub{font-size:19px}
+  .hero-ctas{align-items:center}
+  .hero .btn-solid{padding-left:28px;padding-right:28px}
+  .hero::after{
+    content:'AI  •  CLOUD  •  SIP  •  WHATSAPP  •  SMS';
+    position:absolute;right:-105px;top:55%;transform:rotate(90deg);
+    font:10px 'IBM Plex Mono';letter-spacing:.18em;color:rgba(13,26,38,.18);
+    pointer-events:none;
+  }
+
+  .trust-strip{
+    padding:18px 0;background:#fff;border-top:1px solid var(--line-dark);
+    border-bottom:1px solid var(--line-dark);
+  }
+  .trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px}
+  .trust-grid>div{
+    display:flex;align-items:center;gap:12px;padding:13px 18px;
+    border-right:1px solid var(--line-dark);font-size:11px;color:var(--muted-dark);
+  }
+  .trust-grid>div:last-child{border-right:0}
+  .trust-grid i{font-size:20px;color:var(--teal-2)}
+  .trust-grid strong{display:block;color:var(--ink);font-size:12px;margin-bottom:2px}
+
+  .section-head{position:relative}
+  .section-head h2{letter-spacing:-.035em}
+  .section-head p{font-size:16.5px}
+
+  .solution-row{grid-template-columns:110px 1.1fr 1fr}
+  .sol-main h3{display:flex;align-items:center;gap:12px}
+  .sol-icon{
+    width:40px;height:40px;display:inline-flex;align-items:center;justify-content:center;
+    border-radius:12px;background:rgba(18,120,106,.09);color:var(--teal-2);
+    font-size:18px;flex:none;
+  }
+  .sol-main p{font-size:15.5px}
+
+  .pricing-section{position:relative}
+  .pricing-section::before{
+    content:'';position:absolute;left:0;right:0;top:0;height:1px;
+    background:linear-gradient(90deg,transparent,rgba(255,178,56,.65),transparent);
+  }
+  .enterprise-note{border-radius:14px;background:rgba(255,255,255,.035)}
+
+  .voip-section{padding-top:105px}
+  .voip-section .section-head{max-width:760px}
+  .voip-visual{border-radius:26px}
+  .voip-visual::after{
+    content:'SIP';position:absolute;right:30px;top:25px;
+    font:700 72px 'Space Grotesk';letter-spacing:-.06em;color:rgba(255,255,255,.08);
+  }
+  .tech-card h3{letter-spacing:-.02em}
+
+  .why-grid{border-radius:18px;overflow:hidden;box-shadow:var(--shadow-sm)}
+  .why-item{min-height:185px;padding:34px 28px}
+  .why-item:hover{transform:translateY(-2px)}
+
+  .cta-section h2{letter-spacing:-.04em}
+  .cta-email{display:inline-flex!important}
+
+  .footer-contact{display:flex;align-items:center;gap:24px}
+  .footer-contact>a:first-child{font-family:'IBM Plex Mono';font-size:12px;color:var(--muted)}
+  .footer-contact>a:first-child:hover{color:var(--paper)}
+
+  .floating-wa{
+    border:1px solid rgba(255,255,255,.12);
+    backdrop-filter:blur(12px);
+  }
+
+  @media(max-width:950px){
+    .desktop-nav{display:none}
+    .nav-contact .nav-email{display:none}
+    .menu-toggle{display:inline-flex;align-items:center;justify-content:center}
+    .nav-contact{gap:8px}
+    .trust-grid{grid-template-columns:repeat(2,1fr)}
+    .trust-grid>div:nth-child(2){border-right:0}
+    .trust-grid>div:nth-child(-n+2){border-bottom:1px solid var(--line-dark)}
+  }
+  @media(max-width:700px){
+    .hero::after{display:none}
+    .hero h1{font-size:clamp(42px,13vw,64px)}
+    .trust-grid{grid-template-columns:1fr}
+    .trust-grid>div{border-right:0!important;border-bottom:1px solid var(--line-dark)!important}
+    .trust-grid>div:last-child{border-bottom:0!important}
+    .solution-row{grid-template-columns:1fr}
+    .sol-index{margin-bottom:2px}
+    .footer-contact{align-items:flex-start;flex-direction:column;gap:8px}
+  }
+  @media(max-width:480px){
+    .nav-inner{padding:13px 16px}
+    .nav-cta{font-size:11px;padding:9px 13px}
+    .nav-cta i{font-size:14px}
+    .hero-ctas .btn{width:100%;justify-content:center}
+    .hub-panel{padding:22px}
+  }
+
+
+  .reveal-item{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+  .reveal-item.is-visible{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){
+    .reveal-item{opacity:1;transform:none;transition:none}
+  }
+
+
+  /* =========================================================
+     Kenya / Africa visual identity
+     ========================================================= */
+  .kenya-showcase{
+    padding:105px 0 90px;
+    background:
+      radial-gradient(circle at 5% 20%,rgba(18,120,106,.08),transparent 28%),
+      radial-gradient(circle at 95% 70%,rgba(255,178,56,.10),transparent 28%),
+      var(--paper);
+  }
+  .kenya-head{max-width:780px;margin-bottom:38px}
+  .kenya-photo-grid{
+    display:grid;
+    grid-template-columns:1.35fr 1fr 1fr;
+    gap:16px;
+  }
+  .kenya-photo{
+    position:relative;
+    min-height:410px;
+    margin:0;
+    overflow:hidden;
+    border-radius:22px;
+    background:var(--ink);
+    box-shadow:0 20px 55px rgba(13,26,38,.13);
+  }
+  .kenya-photo-large{min-height:520px}
+  .kenya-photo img{
+    width:100%;
+    height:100%;
+    position:absolute;
+    inset:0;
+    object-fit:cover;
+    transition:transform .7s cubic-bezier(.2,.8,.2,1),filter .4s ease;
+  }
+  .kenya-photo::after{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:linear-gradient(180deg,transparent 35%,rgba(8,17,25,.86) 100%);
+  }
+  .kenya-photo:hover img{
+    transform:scale(1.055);
+    filter:saturate(1.08);
+  }
+  .kenya-photo figcaption{
+    position:absolute;
+    z-index:2;
+    left:24px;
+    right:24px;
+    bottom:22px;
+    color:#fff;
+  }
+  .kenya-photo figcaption span{
+    display:inline-block;
+    margin-bottom:9px;
+    padding:6px 9px;
+    border-radius:999px;
+    background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.2);
+    backdrop-filter:blur(10px);
+    font:10px 'IBM Plex Mono';
+    letter-spacing:.08em;
+    text-transform:uppercase;
+  }
+  .kenya-photo figcaption strong{
+    display:block;
+    max-width:18ch;
+    font-size:20px;
+    line-height:1.12;
+    letter-spacing:-.025em;
+  }
+
+  .voip-visual img{
+    object-position:center 38%;
+  }
+
+  @media(max-width:900px){
+    .kenya-photo-grid{grid-template-columns:1fr 1fr}
+    .kenya-photo-large{grid-column:1/-1;min-height:430px}
+    .kenya-photo{min-height:350px}
+  }
+  @media(max-width:600px){
+    .kenya-showcase{padding:75px 0 65px}
+    .kenya-photo-grid{grid-template-columns:1fr}
+    .kenya-photo-large,.kenya-photo{min-height:390px;grid-column:auto}
+    .kenya-photo figcaption{left:20px;right:20px}
+  }
+
+
+  /* Real-photography treatment — no illustrated / AI-looking presentation */
+  .kenya-photo img,
+  .voip-visual img{
+    filter:saturate(.94) contrast(1.02);
+  }
+  .kenya-photo::after,
+  .voip-visual .voip-overlay{
+    background:linear-gradient(180deg,rgba(8,17,25,.02) 28%,rgba(8,17,25,.84) 100%);
+  }
+  .photo-credit-note{
+    margin-top:14px;
+    font:10px 'IBM Plex Mono';
+    color:var(--muted-dark);
+    letter-spacing:.02em;
+  }
+  .phone-system-hero{
+    position:relative;
+    margin-top:28px;
+    padding:22px;
+    border:1px solid var(--line-dark);
+    border-radius:18px;
+    background:rgba(255,255,255,.58);
+  }
+  .phone-system-hero strong{
+    display:block;
+    font-size:16px;
+    margin-bottom:6px;
+  }
+  .phone-system-hero span{
+    display:block;
+    font-size:12.5px;
+    color:var(--muted-dark);
+    line-height:1.5;
+  }
+
 </style>
 </head>
-<body>
+<body id="top">
 
 <div class="spine" aria-hidden="true">
   <svg viewBox="0 0 52 100" preserveAspectRatio="none">
@@ -853,8 +1134,32 @@
 
 <header class="nav">
   <div class="nav-inner">
-    <div class="logo"><span class="logo-mark"></span> NiaCloud <span style="font-weight:400;color:var(--muted-dark);">Technologies</span></div>
-    <a class="nav-cta" href="https://wa.me/254747316282">0747 316 282 →</a>
+    <a class="logo" href="#top" aria-label="NiaCloud Technologies home">
+      <span class="logo-mark"></span>
+      <span>NiaCloud <b>Technologies</b></span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#solutions">Solutions</a>
+      <a href="#voice">VoIP &amp; SIP</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#why">Why NiaCloud</a>
+    </nav>
+
+    <div class="nav-contact">
+      <a class="nav-email" href="mailto:info@niacloud.co.ke">info@niacloud.co.ke</a>
+      <a class="nav-cta" href="https://wa.me/254747316282"><i class="bi bi-whatsapp"></i> 0747 316 282</a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu" aria-hidden="true">
+    <a href="#solutions">Solutions</a>
+    <a href="#voice">VoIP &amp; SIP</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#why">Why NiaCloud</a>
+    <a href="mailto:info@niacloud.co.ke">Email us</a>
   </div>
 </header>
 
@@ -905,6 +1210,15 @@
     </div>
   </section>
 
+  <section class="trust-strip" aria-label="NiaCloud capabilities">
+    <div class="wrap trust-grid">
+      <div><i class="bi bi-cloud-check"></i><span><strong>Cloud-first</strong> Built for anywhere access</span></div>
+      <div><i class="bi bi-lightning-charge"></i><span><strong>Fast deployment</strong> Practical setup &amp; support</span></div>
+      <div><i class="bi bi-shield-check"></i><span><strong>Business ready</strong> Designed for growing teams</span></div>
+      <div><i class="bi bi-headset"></i><span><strong>Human support</strong> Real technical assistance</span></div>
+    </div>
+  </section>
+
   <!-- SOLUTIONS -->
   <section id="solutions">
     <div class="wrap">
@@ -918,7 +1232,7 @@
         <div class="solution-row">
           <div class="sol-index">01<span class="ch">Channel</span></div>
           <div class="sol-main">
-            <h3>WhatsApp Cloud Leads</h3>
+            <h3><span class="sol-icon"><i class="bi bi-whatsapp"></i></span>WhatsApp Cloud Leads</h3>
             <p>Capture, organize and manage WhatsApp customer leads through a centralized cloud dashboard.</p>
           </div>
           <ul class="sol-bullets">
@@ -934,7 +1248,7 @@
         <div class="solution-row">
           <div class="sol-index">02<span class="ch">Channel</span></div>
           <div class="sol-main">
-            <h3>Call Centre Management</h3>
+            <h3><span class="sol-icon"><i class="bi bi-headset"></i></span>Call Centre Management</h3>
             <p>Manage your call centre operations from one centralized dashboard with Yeastar CDR integration.</p>
           </div>
           <ul class="sol-bullets">
@@ -950,7 +1264,7 @@
         <div class="solution-row">
           <div class="sol-index">03<span class="ch">Channel</span></div>
           <div class="sol-main">
-            <h3>Bulk SMS</h3>
+            <h3><span class="sol-icon"><i class="bi bi-chat-square-text"></i></span>Bulk SMS</h3>
             <p>Reach thousands of customers with customized, targeted SMS campaigns.</p>
           </div>
           <ul class="sol-bullets">
@@ -967,7 +1281,7 @@
   </section>
 
   <!-- PRICING -->
-  <section class="pricing-section">
+  <section id="pricing" class="pricing-section">
     <div class="wrap">
       <div class="section-head">
         <div class="eyebrow">Monthly Packages for SMEs</div>
@@ -1041,22 +1355,22 @@
       <div class="voip-grid">
         <div>
           <div class="eyebrow">VoIP &amp; SIP Telephony</div>
-          <h2 style="font-size:clamp(26px,3.6vw,38px); font-weight:700; line-height:1.1; margin-bottom:18px;">Modernize your business telephone system.</h2>
-          <p style="color:var(--muted-dark); font-size:15.5px; line-height:1.6; margin-bottom:28px;">End-to-end VoIP consultancy, configuration, equipment supply and installation for businesses looking for reliable, modern communication infrastructure.</p>
+          <h2 style="font-size:clamp(26px,3.6vw,38px); font-weight:700; line-height:1.1; margin-bottom:18px;">One professional phone system for your entire business.</h2>
+          <p style="color:var(--muted-dark); font-size:15.5px; line-height:1.6; margin-bottom:28px;">A complete business phone system with SIP, extensions, call routing, IP phones, PBX integration and professional installation.</p>
           <div class="brand-row"><span>Fanvil</span><span>Yealink</span></div>
         </div>
 
         <div class="voip-panel">
-          <h3>Complete VoIP Setup</h3>
+          <h3>Professional Business Phone System</h3>
           <ul class="voip-list">
-            <li>SIP phone configuration</li>
-            <li>VoIP system setup</li>
-            <li>Extension configuration</li>
-            <li>Trunk line configuration</li>
-            <li>Yeastar integration</li>
-            <li>Call routing</li>
+            <li>IP phone & SIP configuration</li>
+            <li>Business PBX setup</li>
+            <li>Extensions & departments</li>
+            <li>SIP trunk configuration</li>
+            <li>Yeastar PBX integration</li>
+            <li>IVR & call routing</li>
             <li>Installation &amp; commissioning</li>
-            <li>Technical support</li>
+            <li>Ongoing technical support</li>
           </ul>
           <div class="trunk-line">
             <span>Trunk Line</span>
@@ -1079,21 +1393,21 @@
 
       <div class="voip-showcase">
         <div class="voip-photo">
-          <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="Modern business team using communication technology" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1573164574230-db1d5e960238?auto=format&fit=crop&w=1800&q=88" alt="Black woman working with technology in a professional office" loading="lazy">
           <div class="voip-photo-copy">
             <span class="mini">VOIP / SIP READY</span>
-            <h3>One professional phone system for your whole business.</h3>
+            <h3>One professional phone system for your entire business.</h3>
             <p>Connect reception, sales, support and management with extensions, intelligent routing, call monitoring and SIP-enabled devices.</p>
           </div>
         </div>
 
         <div class="voip-photo-stack">
           <div class="voip-mini-photo">
-            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Business technology and cloud communication" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1573496358322-6d530124361d?auto=format&fit=crop&w=1400&q=88" alt="Black woman technology professional working on a laptop" loading="lazy">
             <div class="voip-mini-label">Cloud Communication</div>
           </div>
           <div class="voip-mini-photo">
-            <img src="https://images.unsplash.com/photo-1526738549149-8e07eca6c147?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Professional telephone and office communication" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1400&q=88" alt="African business team collaborating around a laptop" loading="lazy">
             <div class="voip-mini-label">SIP Phones &amp; Extensions</div>
           </div>
         </div>
@@ -1117,8 +1431,47 @@
   </section>
 
 
+
+  <!-- KENYA / AFRICA TECHNOLOGY SHOWCASE -->
+  <section class="kenya-showcase">
+    <div class="wrap">
+      <div class="section-head kenya-head">
+        <div class="eyebrow">Built for Africa</div>
+        <h2>Technology that feels local, works globally.</h2>
+        <p>From Business teams and African entrepreneurs to modern contact centres, we build practical communication technology around the way businesses operate here.</p>
+      </div>
+
+      <div class="kenya-photo-grid">
+        <figure class="kenya-photo kenya-photo-large">
+          <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1400&q=88" alt="Business technology team meeting in a modern office" loading="lazy">
+          <figcaption>
+            <span>Business Technology</span>
+            <strong>Real people. Real technology.</strong>
+          </figcaption>
+        </figure>
+
+        <figure class="kenya-photo">
+          <img src="https://images.unsplash.com/photo-1573164574230-db1d5e960238?auto=format&fit=crop&w=1800&q=88" alt="Professionals collaborating on a business technology project" loading="lazy">
+          <figcaption>
+            <span>Customer Experience</span>
+            <strong>Connected teams &amp; call centres.</strong>
+          </figcaption>
+        </figure>
+
+        <figure class="kenya-photo">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1400&q=88" alt="African technology professional working in Nairobi" loading="lazy">
+          <figcaption>
+            <span>African Business</span>
+            <strong>Technology for modern African businesses.</strong>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="photo-credit-note">Photography-led design using real business and technology photographs; no AI-generated people or illustrated staff imagery.</div>
+    </div>
+  </section>
+
   <!-- PREMIUM VOIP / SIP SHOWCASE -->
-  <section class="voip-section">
+  <section id="voice" class="voip-section">
     <div class="wrap">
       <div class="section-head">
         <div class="eyebrow">Voice Infrastructure</div>
@@ -1127,7 +1480,7 @@
       </div>
 
       <div class="voip-visual">
-        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1800&q=85"
+        <img src="https://images.unsplash.com/photo-1573496358322-6d530124361d?auto=format&fit=crop&w=1400&q=88"
              alt="Modern business communication and technology workspace"
              loading="lazy">
         <div class="voip-overlay"></div>
@@ -1187,7 +1540,7 @@
   </section>
 
   <!-- WHY -->
-  <section>
+  <section id="why">
     <div class="wrap">
       <div class="section-head">
         <div class="eyebrow">Why NiaCloud</div>
@@ -1210,7 +1563,7 @@
       <div class="eyebrow">Get Started Today</div>
       <h2>Ready to make your business smarter and more connected?</h2>
       <p>Talk to NiaCloud Technologies today for a consultation, setup and customized solution for your business.</p>
-      <a class="btn btn-solid" href="https://wa.me/254747316282">WhatsApp / Call 0747 316 282</a>
+      <div class="cta-actions"><a class="btn btn-solid" href="https://wa.me/254747316282">WhatsApp / Call 0747 316 282</a><a class="btn btn-ghost cta-email" href="mailto:info@niacloud.co.ke">Email info@niacloud.co.ke</a></div>
     </div>
   </section>
 
@@ -1223,7 +1576,7 @@
         <div class="logo">NiaCloud <span style="font-weight:400;color:var(--muted-dark);">Technologies</span></div>
         <div class="footer-tags" style="margin-top:8px;">AI • Cloud • Voice • Software • Automation • Bulk SMS</div>
       </div>
-      <div class="footer-phone">0747 316 282</div>
+      <div class="footer-contact"><a href="mailto:info@niacloud.co.ke">info@niacloud.co.ke</a><a class="footer-phone" href="tel:+254747316282">0747 316 282</a></div>
     </div>
     <div class="footer-bottom">
       <span>© 2026 NiaCloud Technologies</span>
@@ -1266,6 +1619,50 @@
       .floating-wa span{display:none}
     }
   </style>
+
+
+  <script>
+    // Mobile navigation
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mobileMenu = document.querySelector('.mobile-menu');
+
+    if(menuToggle && mobileMenu){
+      menuToggle.addEventListener('click', () => {
+        const open = mobileMenu.classList.toggle('open');
+        menuToggle.setAttribute('aria-expanded', String(open));
+        menuToggle.innerHTML = open
+          ? '<i class="bi bi-x-lg"></i>'
+          : '<i class="bi bi-list"></i>';
+        mobileMenu.setAttribute('aria-hidden', String(!open));
+      });
+
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.remove('open');
+          menuToggle.setAttribute('aria-expanded','false');
+          menuToggle.innerHTML = '<i class="bi bi-list"></i>';
+          mobileMenu.setAttribute('aria-hidden','true');
+        });
+      });
+    }
+
+    // Lightweight reveal animation, no external JS dependency.
+    const revealItems = document.querySelectorAll('.solution-row,.price-card,.tech-card,.sip-feature,.why-item,.trust-grid>div');
+    if('IntersectionObserver' in window){
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting){
+            entry.target.classList.add('is-visible');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, {threshold:.08});
+      revealItems.forEach(el => {
+        el.classList.add('reveal-item');
+        observer.observe(el);
+      });
+    }
+  </script>
 
 </body>
 </html>
