@@ -5,10 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <meta name="description" content="NiaCloud Technologies — AI, Cloud, VoIP, SIP, WhatsApp, Bulk SMS and business communication solutions.">
   <meta name="theme-color" content="#0D1A26">
-  <title>NiaCloud Technologies — Smarter Communication. Better Business.</title>
+  <title>NiaCloud Technologies | AI • Cloud • VoIP • SIP • Business Communication</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
     --ink:#0D1A26;
@@ -656,6 +657,189 @@
     .price-card{padding:30px 22px;}
   }
 
+
+  /* =========================================================
+     NiaCloud Premium UX Upgrade
+     ========================================================= */
+  :root{
+    --white:#ffffff;
+    --glass:rgba(255,255,255,.72);
+    --shadow-sm:0 8px 30px rgba(13,26,38,.08);
+    --shadow-lg:0 24px 70px rgba(13,26,38,.16);
+    --gradient:linear-gradient(135deg,#0D1A26 0%,#12364a 48%,#0E5B50 100%);
+  }
+
+  body{background:
+    radial-gradient(circle at 10% 8%,rgba(18,120,106,.07),transparent 30%),
+    radial-gradient(circle at 90% 12%,rgba(255,178,56,.10),transparent 26%),
+    var(--paper);
+  }
+
+  .nav-inner{min-height:72px}
+  .logo-mark{position:relative}
+  .logo-mark::after{
+    content:'';position:absolute;inset:-5px;border:1px solid rgba(255,178,56,.35);
+    border-radius:50%;
+  }
+
+  .hero{padding:110px 0 72px;overflow:hidden}
+  .hero::before{
+    content:'';position:absolute;width:620px;height:620px;right:-280px;top:-260px;
+    background:radial-gradient(circle,rgba(18,120,106,.13),transparent 68%);
+    pointer-events:none;
+  }
+
+  .hero h1{font-size:clamp(46px,7vw,84px);letter-spacing:-.045em}
+  .hero h1 em{
+    background:linear-gradient(90deg,var(--teal-2),#159b87);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+
+  .hub-panel{
+    border:1px solid rgba(255,255,255,.10);
+    box-shadow:var(--shadow-lg);
+    border-radius:18px;
+    padding:30px;
+  }
+  .hub-row{
+    border-radius:10px;
+    margin:2px 0;
+    padding:15px 8px;
+    transition:.25s ease;
+  }
+  .hub-row:hover{background:rgba(255,255,255,.06);transform:translateX(4px)}
+  .hub-chip{border-radius:999px}
+
+  .btn{border-radius:999px;padding:14px 24px}
+  .btn-solid{box-shadow:0 10px 25px rgba(13,26,38,.14)}
+  .btn-solid:hover{box-shadow:0 14px 32px rgba(14,91,80,.22)}
+
+  .solution-row{
+    padding:52px 20px;
+    margin:0 -20px;
+    border-radius:18px;
+    transition:.3s ease;
+  }
+  .solution-row:hover{
+    background:rgba(255,255,255,.62);
+    box-shadow:var(--shadow-sm);
+    transform:translateY(-2px);
+  }
+
+  .price-grid{gap:18px;background:transparent}
+  .price-card{
+    border:1px solid rgba(241,237,227,.12);
+    border-radius:18px;
+    box-shadow:0 18px 55px rgba(0,0,0,.12);
+    overflow:hidden;
+    transition:.3s ease;
+  }
+  .price-card:hover{transform:translateY(-7px);box-shadow:0 28px 75px rgba(0,0,0,.2)}
+  .price-card.featured{
+    background:linear-gradient(145deg,#132538,#0e5b50);
+    border-color:rgba(255,178,56,.35);
+  }
+  .price-tag{border-bottom-left-radius:12px}
+
+  /* ===== Premium VoIP / SIP visual section ===== */
+  .voip-section{
+    background:linear-gradient(180deg,#f1ede3 0%,#e7e1d2 100%);
+    overflow:hidden;
+  }
+  .voip-visual{
+    position:relative;
+    min-height:430px;
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:var(--shadow-lg);
+    background:#0d1a26;
+  }
+  .voip-visual img{
+    width:100%;height:100%;min-height:430px;object-fit:cover;
+    opacity:.72;transition:transform .8s ease,opacity .4s ease;
+  }
+  .voip-visual:hover img{transform:scale(1.045);opacity:.82}
+  .voip-overlay{
+    position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(13,26,38,.08),rgba(13,26,38,.88));
+  }
+  .voip-visual-content{
+    position:absolute;left:28px;right:28px;bottom:28px;color:#fff;
+  }
+  .voip-visual-content .mini-label{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:7px 11px;border:1px solid rgba(255,255,255,.22);
+    background:rgba(13,26,38,.42);backdrop-filter:blur(10px);
+    border-radius:999px;font:11px 'IBM Plex Mono';letter-spacing:.1em;text-transform:uppercase;
+  }
+  .voip-visual-content h3{
+    margin-top:14px;font-size:clamp(25px,3vw,38px);line-height:1.08;
+  }
+  .voip-visual-content p{margin-top:10px;color:rgba(255,255,255,.72);max-width:48ch;line-height:1.55}
+
+  .sip-features{
+    display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:24px;
+  }
+  .sip-feature{
+    padding:17px;border:1px solid var(--line-dark);background:rgba(255,255,255,.48);
+    border-radius:14px;transition:.25s ease;
+  }
+  .sip-feature:hover{background:#fff;transform:translateY(-3px);box-shadow:var(--shadow-sm)}
+  .sip-feature i{font-size:20px;color:var(--teal-2);display:block;margin-bottom:9px}
+  .sip-feature strong{font-size:14px;display:block}
+  .sip-feature span{font-size:12px;color:var(--muted-dark);line-height:1.45}
+
+  .brand-row span{border-radius:999px;background:rgba(255,255,255,.55);transition:.2s}
+  .brand-row span:hover{background:#fff;box-shadow:var(--shadow-sm)}
+
+  /* ===== Communication technology cards ===== */
+  .tech-showcase{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:35px;
+  }
+  .tech-card{
+    position:relative;min-height:185px;padding:22px;border-radius:18px;
+    overflow:hidden;color:#fff;background:var(--ink);
+    box-shadow:var(--shadow-sm);transition:.3s ease;
+  }
+  .tech-card::before{
+    content:'';position:absolute;width:130px;height:130px;right:-45px;bottom:-45px;
+    border-radius:50%;background:rgba(255,178,56,.13);
+  }
+  .tech-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+  .tech-card i{font-size:26px;color:var(--signal)}
+  .tech-card h3{font-size:18px;margin:26px 0 7px}
+  .tech-card p{font-size:12.5px;line-height:1.5;color:var(--muted)}
+
+  .why-item{border-radius:0;min-height:170px}
+  .why-item:first-child{border-top-left-radius:16px}
+  .why-item:nth-child(3){border-top-right-radius:16px}
+  .why-item:nth-child(4){border-bottom-left-radius:16px}
+  .why-item:nth-child(6){border-bottom-right-radius:16px}
+
+  .cta-section{
+    position:relative;overflow:hidden;
+    background:linear-gradient(135deg,#0E5B50,#12364a 60%,#0D1A26);
+  }
+  .cta-section::before,.cta-section::after{
+    content:'';position:absolute;border:1px solid rgba(255,255,255,.08);border-radius:50%;
+  }
+  .cta-section::before{width:420px;height:420px;right:-180px;top:-190px}
+  .cta-section::after{width:260px;height:260px;left:-140px;bottom:-150px}
+  .cta-section .wrap{position:relative;z-index:1}
+
+  @media(max-width:900px){
+    .tech-showcase{grid-template-columns:repeat(2,1fr)}
+    .voip-visual,.voip-visual img{min-height:360px}
+  }
+  @media(max-width:600px){
+    .hero{padding-top:72px}
+    .solution-row{padding:35px 14px;margin:0 -14px}
+    .tech-showcase,.sip-features{grid-template-columns:1fr}
+    .voip-visual,.voip-visual img{min-height:330px}
+    .voip-visual-content{left:20px;right:20px;bottom:20px}
+    .price-card{padding:30px 22px}
+  }
+
 </style>
 </head>
 <body>
@@ -932,6 +1116,76 @@
     </div>
   </section>
 
+
+  <!-- PREMIUM VOIP / SIP SHOWCASE -->
+  <section class="voip-section">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Voice Infrastructure</div>
+        <h2>Professional VoIP &amp; SIP systems built for modern teams.</h2>
+        <p>From IP phones and SIP trunks to PBX, call routing and business continuity, NiaCloud helps you build a reliable voice environment.</p>
+      </div>
+
+      <div class="voip-visual">
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1800&q=85"
+             alt="Modern business communication and technology workspace"
+             loading="lazy">
+        <div class="voip-overlay"></div>
+        <div class="voip-visual-content">
+          <span class="mini-label"><i class="bi bi-telephone"></i> SIP • PBX • IP TELEPHONY</span>
+          <h3>Connect every conversation to your business.</h3>
+          <p>Professional voice infrastructure for offices, call centres, remote teams and growing enterprises.</p>
+        </div>
+      </div>
+
+      <div class="tech-showcase">
+        <article class="tech-card">
+          <i class="bi bi-phone"></i>
+          <h3>IP Phones</h3>
+          <p>Business-grade SIP phones, extensions and desk communication.</p>
+        </article>
+        <article class="tech-card">
+          <i class="bi bi-diagram-3"></i>
+          <h3>Cloud PBX</h3>
+          <p>Centralized extensions, IVR, queues, routing and call management.</p>
+        </article>
+        <article class="tech-card">
+          <i class="bi bi-globe2"></i>
+          <h3>SIP Trunks</h3>
+          <p>Connect your PBX to reliable voice carriers and business numbers.</p>
+        </article>
+        <article class="tech-card">
+          <i class="bi bi-headset"></i>
+          <h3>Call Centre</h3>
+          <p>Monitor agents, call activity, recordings and customer interactions.</p>
+        </article>
+      </div>
+
+      <div class="sip-features">
+        <div class="sip-feature">
+          <i class="bi bi-shield-check"></i>
+          <strong>Reliable &amp; Secure</strong>
+          <span>Structured voice deployments with practical network and SIP configuration.</span>
+        </div>
+        <div class="sip-feature">
+          <i class="bi bi-arrow-repeat"></i>
+          <strong>Call Routing</strong>
+          <span>Design intelligent inbound, outbound, IVR and extension routing.</span>
+        </div>
+        <div class="sip-feature">
+          <i class="bi bi-bar-chart-line"></i>
+          <strong>Call Analytics</strong>
+          <span>Connect call records and reporting to your business dashboard.</span>
+        </div>
+        <div class="sip-feature">
+          <i class="bi bi-tools"></i>
+          <strong>Installation &amp; Support</strong>
+          <span>Configuration, commissioning, troubleshooting and ongoing support.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- WHY -->
   <section>
     <div class="wrap">
@@ -991,6 +1245,27 @@
   document.addEventListener('scroll', updateSpine, {passive:true});
   updateSpine();
 </script>
+
+
+  <a class="floating-wa" href="https://wa.me/254747316282" aria-label="Chat with NiaCloud on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+    <span>Chat with us</span>
+  </a>
+  <style>
+    .floating-wa{
+      position:fixed;right:22px;bottom:22px;z-index:100;
+      display:flex;align-items:center;gap:9px;
+      background:#0e5b50;color:#fff;padding:12px 16px;border-radius:999px;
+      box-shadow:0 14px 35px rgba(13,26,38,.25);
+      font:600 12px 'Inter',sans-serif;transition:.25s ease;
+    }
+    .floating-wa i{font-size:18px}
+    .floating-wa:hover{transform:translateY(-3px);background:#12786a}
+    @media(max-width:520px){
+      .floating-wa{width:50px;height:50px;padding:0;justify-content:center;right:16px;bottom:16px}
+      .floating-wa span{display:none}
+    }
+  </style>
 
 </body>
 </html>
