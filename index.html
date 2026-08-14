@@ -3,7 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
-<title>NiaCloud Technologies — Smarter Communication. Better Business.</title>
+<meta name="description" content="NiaCloud Technologies — AI, Cloud, VoIP, SIP, WhatsApp, Bulk SMS and business communication solutions.">
+  <meta name="theme-color" content="#0D1A26">
+  <title>NiaCloud Technologies — Smarter Communication. Better Business.</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -452,6 +454,208 @@
 
   ::selection{ background:var(--signal); color:var(--ink); }
   a:focus-visible, button:focus-visible{ outline:2px solid var(--signal); outline-offset:2px; }
+
+  /* ===== PREMIUM MODERN POLISH ===== */
+  :root{
+    --shadow-sm:0 10px 30px rgba(13,26,38,.08);
+    --shadow-md:0 22px 60px rgba(13,26,38,.12);
+    --shadow-lg:0 35px 90px rgba(13,26,38,.18);
+    --glass:rgba(255,255,255,.58);
+  }
+  body{
+    background:
+      radial-gradient(circle at 85% 8%, rgba(255,178,56,.10), transparent 24%),
+      radial-gradient(circle at 5% 45%, rgba(18,120,106,.07), transparent 28%),
+      var(--paper);
+  }
+  header.nav{
+    box-shadow:0 1px 0 rgba(13,26,38,.05),0 8px 30px rgba(13,26,38,.04);
+  }
+  .logo{letter-spacing:-.02em;}
+  .nav-cta,.btn,.price-btn{
+    box-shadow:0 8px 20px rgba(13,26,38,.08);
+  }
+  .hero{
+    background:
+      linear-gradient(180deg,rgba(255,255,255,.20),transparent 65%);
+  }
+  .hero h1{
+    letter-spacing:-.045em;
+  }
+  .hero-sub{font-size:clamp(16px,2vw,19px);}
+  .hub-panel{
+    border:1px solid rgba(255,255,255,.08);
+    box-shadow:var(--shadow-lg);
+    border-radius:18px;
+    transform:translateY(0);
+    transition:transform .3s ease,box-shadow .3s ease;
+  }
+  .hub-panel:hover{
+    transform:translateY(-6px);
+    box-shadow:0 40px 100px rgba(13,26,38,.24);
+  }
+  .hub-row{
+    border-radius:8px;
+    transition:background .2s ease,transform .2s ease;
+  }
+  .hub-row:hover{background:rgba(255,255,255,.045);transform:translateX(4px);}
+  .solution-row{
+    transition:padding .25s ease,background .25s ease;
+    border-radius:14px;
+    padding-left:12px;
+    padding-right:12px;
+  }
+  .solution-row:hover{
+    background:rgba(255,255,255,.35);
+  }
+  .price-grid{
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:var(--shadow-lg);
+  }
+  .price-card{
+    transition:transform .25s ease,background .25s ease;
+  }
+  .price-card:hover{transform:translateY(-5px);z-index:2;}
+  .price-card.featured{
+    box-shadow:inset 0 0 0 1px rgba(255,178,56,.22);
+  }
+  .voip-panel{
+    border-radius:18px;
+    background:rgba(255,255,255,.48);
+    box-shadow:var(--shadow-md);
+    backdrop-filter:blur(12px);
+  }
+  .brand-row span{
+    border-radius:999px;
+    background:rgba(255,255,255,.42);
+    box-shadow:var(--shadow-sm);
+  }
+  .why-grid{border-radius:18px;overflow:hidden;box-shadow:var(--shadow-md);}
+  .why-item{transition:transform .25s ease,background .25s ease;}
+  .why-item:hover{transform:translateY(-3px);}
+  .cta-section{
+    background:
+      radial-gradient(circle at 20% 10%,rgba(255,178,56,.16),transparent 30%),
+      radial-gradient(circle at 85% 90%,rgba(255,255,255,.08),transparent 30%),
+      var(--teal-2);
+  }
+
+  /* ===== VOIP VISUAL SHOWCASE ===== */
+  .voip-showcase{
+    margin-top:58px;
+    display:grid;
+    grid-template-columns:1.25fr .75fr;
+    gap:18px;
+  }
+  .voip-photo{
+    position:relative;
+    min-height:430px;
+    overflow:hidden;
+    border-radius:22px;
+    background:var(--ink);
+    box-shadow:var(--shadow-lg);
+  }
+  .voip-photo img{
+    width:100%;
+    height:100%;
+    min-height:430px;
+    object-fit:cover;
+    transition:transform .6s ease;
+  }
+  .voip-photo:hover img{transform:scale(1.045);}
+  .voip-photo::after{
+    content:'';
+    position:absolute;inset:0;
+    background:linear-gradient(180deg,transparent 35%,rgba(13,26,38,.82) 100%);
+    pointer-events:none;
+  }
+  .voip-photo-copy{
+    position:absolute;
+    z-index:2;
+    left:28px;right:28px;bottom:26px;
+    color:#fff;
+  }
+  .voip-photo-copy .mini{
+    display:inline-flex;
+    padding:6px 10px;
+    border:1px solid rgba(255,255,255,.2);
+    border-radius:999px;
+    background:rgba(255,255,255,.10);
+    backdrop-filter:blur(10px);
+    font:11px 'IBM Plex Mono';
+    color:var(--signal);
+    margin-bottom:10px;
+  }
+  .voip-photo-copy h3{
+    font-size:clamp(22px,3vw,34px);
+    margin-bottom:8px;
+  }
+  .voip-photo-copy p{
+    max-width:55ch;
+    color:rgba(255,255,255,.76);
+    font-size:14px;
+    line-height:1.55;
+  }
+  .voip-photo-stack{
+    display:grid;
+    grid-template-rows:1fr 1fr;
+    gap:18px;
+  }
+  .voip-mini-photo{
+    position:relative;
+    min-height:205px;
+    overflow:hidden;
+    border-radius:22px;
+    background:var(--ink);
+    box-shadow:var(--shadow-md);
+  }
+  .voip-mini-photo img{
+    width:100%;height:100%;min-height:205px;object-fit:cover;
+    transition:transform .5s ease;
+  }
+  .voip-mini-photo:hover img{transform:scale(1.06);}
+  .voip-mini-photo::after{
+    content:'';position:absolute;inset:0;
+    background:linear-gradient(180deg,transparent 20%,rgba(13,26,38,.78));
+  }
+  .voip-mini-label{
+    position:absolute;z-index:2;left:20px;bottom:18px;
+    color:#fff;font-family:'Space Grotesk';font-size:18px;font-weight:600;
+  }
+  .sip-features{
+    margin-top:24px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
+  }
+  .sip-feature{
+    padding:18px;
+    border:1px solid var(--line-dark);
+    border-radius:16px;
+    background:rgba(255,255,255,.38);
+    box-shadow:var(--shadow-sm);
+  }
+  .sip-feature strong{
+    display:block;font:700 18px 'Space Grotesk';margin-bottom:5px;
+  }
+  .sip-feature span{font-size:12px;color:var(--muted-dark);line-height:1.45;}
+  @media (max-width:800px){
+    .voip-showcase{grid-template-columns:1fr;}
+    .voip-photo,.voip-photo img{min-height:330px;}
+    .voip-photo-stack{grid-template-columns:1fr 1fr;grid-template-rows:none;}
+    .voip-mini-photo,.voip-mini-photo img{min-height:220px;}
+  }
+  @media (max-width:520px){
+    .voip-showcase{gap:12px;margin-top:38px;}
+    .voip-photo,.voip-photo img{min-height:300px;}
+    .voip-photo-stack{grid-template-columns:1fr;}
+    .voip-mini-photo,.voip-mini-photo img{min-height:190px;}
+    .sip-features{grid-template-columns:1fr;}
+    .hub-panel{padding:22px;}
+    .price-card{padding:30px 22px;}
+  }
+
 </style>
 </head>
 <body>
@@ -481,7 +685,7 @@
           <h1>Smarter communication.<br><em>Better business.</em></h1>
           <p class="hero-sub">Powering smarter business communication, customer management and automation through one connected cloud platform.</p>
           <div class="tag-row">
-            <span>AI</span><span class="sep">•</span><span>Cloud</span><span class="sep">•</span><span>Voice</span><span class="sep">•</span><span>Software</span><span class="sep">•</span><span>Automation</span><span class="sep">•</span><span>Bulk SMS</span>
+            <span>AI</span><span class="sep">•</span><span>Cloud</span><span class="sep">•</span><span>Voice</span><span class="sep">•</span><span>VoIP</span><span class="sep">•</span><span>SIP</span><span class="sep">•</span><span>Software</span><span class="sep">•</span><span>Automation</span><span class="sep">•</span><span>Bulk SMS</span>
           </div>
           <div class="hero-ctas">
             <a class="btn btn-solid" href="https://wa.me/254747316282">Get Started <span class="btn-arrow">→</span></a>
@@ -674,6 +878,55 @@
             <span>Trunk Line</span>
             <span>KES 2.78 / min</span>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- VOIP / SIP VISUAL SHOWCASE -->
+  <section id="voip" class="voip-visual-section">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Voice Infrastructure</div>
+        <h2>VoIP, SIP &amp; business telephony — built for modern teams.</h2>
+        <p>From SIP phones and extensions to PBX, trunks and call routing, NiaCloud helps businesses build a reliable communication environment.</p>
+      </div>
+
+      <div class="voip-showcase">
+        <div class="voip-photo">
+          <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="Modern business team using communication technology" loading="lazy">
+          <div class="voip-photo-copy">
+            <span class="mini">VOIP / SIP READY</span>
+            <h3>One professional phone system for your whole business.</h3>
+            <p>Connect reception, sales, support and management with extensions, intelligent routing, call monitoring and SIP-enabled devices.</p>
+          </div>
+        </div>
+
+        <div class="voip-photo-stack">
+          <div class="voip-mini-photo">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Business technology and cloud communication" loading="lazy">
+            <div class="voip-mini-label">Cloud Communication</div>
+          </div>
+          <div class="voip-mini-photo">
+            <img src="https://images.unsplash.com/photo-1526738549149-8e07eca6c147?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Professional telephone and office communication" loading="lazy">
+            <div class="voip-mini-label">SIP Phones &amp; Extensions</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sip-features">
+        <div class="sip-feature">
+          <strong>SIP Trunks</strong>
+          <span>Flexible business calling with scalable SIP connectivity.</span>
+        </div>
+        <div class="sip-feature">
+          <strong>PBX Systems</strong>
+          <span>Centralized extensions, IVR, queues and intelligent routing.</span>
+        </div>
+        <div class="sip-feature">
+          <strong>IP Phones</strong>
+          <span>Professional desk phones configured and commissioned for your team.</span>
         </div>
       </div>
     </div>
