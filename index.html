@@ -1,12 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="NiaCloud Technologies — AI, Cloud, VoIP, SIP, WhatsApp, Bulk SMS and business communication solutions.">
-<meta name="theme-color" content="#07151b">
-<title>NiaCloud Technologies | Intelligent Business Communication</title>
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="NiaCloud Technologies — AI, Cloud, VoIP, SIP, WhatsApp, Bulk SMS and business communication technology.">
+<meta name="theme-color" content="#061116">
+<title>NiaCloud Technologies — Connect. Automate. Grow.</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -14,578 +13,332 @@
 
 <style>
 :root{
-  --bg:#07151b;
-  --bg2:#0b2027;
-  --surface:#102a32;
-  --surface2:#12343d;
-  --cream:#f5f3ec;
-  --white:#fff;
-  --text:#dbe7e8;
-  --muted:#91a8ad;
-  --line:rgba(255,255,255,.10);
-  --gold:#f7b84b;
-  --green:#18c29c;
-  --green2:#0b8f76;
-  --max:1240px;
-  --shadow:0 30px 90px rgba(0,0,0,.28);
-  --radius:26px;
+ --ink:#061116;--ink2:#0b2027;--panel:#0d2931;--panel2:#123640;
+ --white:#fff;--cream:#f5f4ee;--text:#dce8e8;--muted:#91a7ab;
+ --mint:#19c39c;--mint2:#0d8d76;--gold:#f4b94f;
+ --line:rgba(255,255,255,.105);--darkline:#dedfd8;
+ --max:1260px;--r:28px;--shadow:0 35px 100px rgba(0,0,0,.30)
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{
-  font-family:"DM Sans",sans-serif;
-  background:var(--bg);
-  color:var(--text);
-  overflow-x:hidden;
-  -webkit-font-smoothing:antialiased;
-}
-body:before{
-  content:"";position:fixed;inset:0;pointer-events:none;z-index:-2;
-  background:
-    radial-gradient(circle at 8% 0%,rgba(24,194,156,.14),transparent 25%),
-    radial-gradient(circle at 92% 12%,rgba(247,184,75,.12),transparent 23%),
-    linear-gradient(180deg,#07151b 0%,#081a21 55%,#f4f2ea 55.1%,#f4f2ea 100%);
-}
-a{text-decoration:none;color:inherit}
-button{font:inherit}
-img{max-width:100%;display:block}
+body{font-family:"DM Sans",sans-serif;background:var(--ink);color:var(--text);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-5;pointer-events:none;background:
+ radial-gradient(circle at 12% 4%,rgba(25,195,156,.12),transparent 25%),
+ radial-gradient(circle at 90% 15%,rgba(244,185,79,.10),transparent 22%)}
+a{text-decoration:none;color:inherit}button{font:inherit}img{max-width:100%}
 .wrap{width:min(var(--max),calc(100% - 48px));margin:auto}
 .mono{font-family:"Space Mono",monospace}
-.eyebrow{
-  display:inline-flex;align-items:center;gap:9px;
-  font:700 11px "Space Mono",monospace;
-  letter-spacing:.14em;text-transform:uppercase;color:var(--green);
-  margin-bottom:18px
-}
-.eyebrow:before{content:"";width:28px;height:2px;background:var(--gold);border-radius:9px}
 h1,h2,h3{font-family:Manrope,sans-serif;letter-spacing:-.045em}
-.section{padding:110px 0}
-.section-head{max-width:760px;margin-bottom:55px}
-.section-head h2{font-size:clamp(34px,5vw,58px);line-height:1.03;color:var(--white)}
-.section-head p{margin-top:18px;color:var(--muted);font-size:17px;line-height:1.7}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--mint);font:700 10px "Space Mono";letter-spacing:.16em;text-transform:uppercase;margin-bottom:17px}
+.eyebrow:before{content:"";width:30px;height:2px;background:var(--gold);border-radius:20px}
+.section{padding:112px 0}
+.head{max-width:760px;margin-bottom:52px}
+.head h2{font-size:clamp(36px,5.3vw,62px);line-height:1.02;color:#fff}
+.head p{font-size:17px;line-height:1.7;color:var(--muted);margin-top:18px}
 
 /* NAV */
-.nav{
-  position:sticky;top:0;z-index:100;
-  background:rgba(7,21,27,.78);
-  backdrop-filter:blur(20px);
-  border-bottom:1px solid var(--line)
-}
-.nav-inner{min-height:76px;display:flex;align-items:center;gap:28px}
-.logo{display:flex;align-items:center;gap:11px;font:800 20px Manrope,sans-serif;white-space:nowrap}
-.logo b{color:#789298;font-weight:600}
-.logo-dot{
-  width:13px;height:13px;border-radius:50%;background:var(--gold);
-  box-shadow:0 0 0 6px rgba(247,184,75,.10),0 0 24px rgba(247,184,75,.4)
-}
-.desktop-nav{display:flex;align-items:center;gap:28px;margin-left:auto}
-.desktop-nav a{font-size:13px;color:#a9bdc1;transition:.2s}
-.desktop-nav a:hover{color:#fff}
-.nav-right{display:flex;align-items:center;gap:10px}
-.nav-email{font:11px "Space Mono",monospace;color:#8fa6aa}
-.nav-cta,.btn{
-  display:inline-flex;align-items:center;justify-content:center;gap:9px;
-  border-radius:999px;padding:13px 19px;font-weight:700;font-size:13px;
-  transition:.25s ease
-}
-.nav-cta{background:var(--gold);color:#07151b}
-.nav-cta:hover,.btn-gold:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(247,184,75,.22)}
-.menu{display:none;border:1px solid var(--line);background:rgba(255,255,255,.06);color:white;width:42px;height:42px;border-radius:50%}
+.nav{position:sticky;top:0;z-index:1000;background:rgba(6,17,22,.78);border-bottom:1px solid var(--line);backdrop-filter:blur(20px)}
+.navrow{height:78px;display:flex;align-items:center;gap:24px}
+.logo{display:flex;align-items:center;gap:10px;font:800 20px Manrope;white-space:nowrap}
+.logo em{font-style:normal;color:#7e959a;font-weight:600}
+.dot{width:13px;height:13px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 6px rgba(244,185,79,.10),0 0 25px rgba(244,185,79,.35)}
+.links{display:flex;gap:27px;margin-left:auto}
+.links a{font-size:12px;color:#9eb3b6;transition:.2s}.links a:hover{color:#fff}
+.navright{display:flex;align-items:center;gap:10px}
+.email{font:10px "Space Mono";color:#789196}
+.cta-mini{background:var(--gold);color:var(--ink);font-weight:800;font-size:12px;padding:12px 17px;border-radius:999px}
+.menu{display:none;width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:#0b2027;color:#fff}
 
 /* HERO */
-.hero{position:relative;overflow:hidden;padding:90px 0 100px}
-.hero-grid{display:grid;grid-template-columns:1.03fr .97fr;gap:70px;align-items:center}
-.hero h1{font-size:clamp(48px,7vw,88px);line-height:.98;color:#fff;max-width:800px}
-.hero h1 span{
-  background:linear-gradient(90deg,#fff 10%,#9be6d7 55%,#18c29c);
-  -webkit-background-clip:text;background-clip:text;color:transparent
-}
-.hero-copy{font-size:19px;line-height:1.7;color:#9eb2b6;max-width:620px;margin:25px 0 30px}
-.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
-.btn{padding:15px 23px}
-.btn-gold{background:var(--gold);color:#07151b}
-.btn-outline{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.04);color:#fff}
-.btn-outline:hover{background:#fff;color:#07151b}
-.hero-meta{display:flex;gap:22px;flex-wrap:wrap;margin-top:28px;color:#80979c;font-size:12px}
-.hero-meta span{display:flex;align-items:center;gap:7px}
-.hero-meta i{color:var(--green)}
+.hero{position:relative;padding:80px 0 90px;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-180px;top:60px;width:560px;height:560px;border-radius:50%;border:1px solid rgba(25,195,156,.08);box-shadow:0 0 0 60px rgba(25,195,156,.025),0 0 0 120px rgba(25,195,156,.018);pointer-events:none}
+.herogrid{display:grid;grid-template-columns:1fr .92fr;gap:75px;align-items:center}
+.hero h1{font-size:clamp(52px,7.2vw,92px);line-height:.94;color:#fff;max-width:820px}
+.hero h1 .gradient{background:linear-gradient(90deg,#fff,#a8e7da 55%,#19c39c);-webkit-background-clip:text;color:transparent}
+.hero p{max-width:660px;font-size:18px;line-height:1.72;color:#9db2b6;margin:25px 0 29px}
+.actions{display:flex;gap:11px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:999px;padding:15px 22px;font-size:13px;font-weight:800;transition:.25s}
+.gold{background:var(--gold);color:var(--ink)}.gold:hover{transform:translateY(-3px);box-shadow:0 15px 30px rgba(244,185,79,.20)}
+.ghost{border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.04);color:#fff}.ghost:hover{background:#fff;color:var(--ink)}
+.meta{display:flex;gap:20px;flex-wrap:wrap;margin-top:27px;color:#7e969b;font-size:11px}
+.meta span{display:flex;align-items:center;gap:7px}.meta i{color:var(--mint)}
 
-.dashboard{
-  position:relative;border:1px solid rgba(255,255,255,.12);border-radius:30px;
-  padding:20px;background:linear-gradient(145deg,rgba(255,255,255,.09),rgba(255,255,255,.025));
-  box-shadow:var(--shadow);overflow:hidden
-}
-.dashboard:before{
-  content:"";position:absolute;width:320px;height:320px;right:-130px;top:-150px;border-radius:50%;
-  background:rgba(24,194,156,.17);filter:blur(5px)
-}
-.dash-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
-.dash-brand{font:700 11px "Space Mono";letter-spacing:.12em;color:#7f999e}
-.live{display:flex;align-items:center;gap:7px;font:700 10px "Space Mono";color:var(--green)}
-.live:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 15px var(--green)}
-.dash-main{
-  position:relative;background:#0a1d24;border:1px solid rgba(255,255,255,.08);
-  border-radius:22px;padding:22px
-}
-.dash-title{font:700 22px Manrope;color:#fff}
-.dash-sub{color:#728b91;font-size:12px;margin-top:4px}
-.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:20px 0}
-.metric{background:#0e2931;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:15px}
-.metric small{color:#789197;font-size:10px}
-.metric strong{display:block;color:#fff;font:700 20px Manrope;margin-top:7px}
-.channel-list{display:grid;gap:8px}
-.channel{
-  display:flex;align-items:center;gap:12px;padding:13px;border-radius:14px;
-  background:#0d252d;border:1px solid rgba(255,255,255,.055)
-}
-.channel-icon{width:36px;height:36px;border-radius:11px;display:grid;place-items:center;background:rgba(24,194,156,.10);color:var(--green);font-size:17px}
-.channel b{font-size:13px;color:#fff}.channel small{display:block;color:#718a90;margin-top:2px;font-size:10px}
-.channel-status{margin-left:auto;font:10px "Space Mono";color:var(--green)}
-.dash-foot{display:flex;justify-content:space-between;margin-top:17px;color:#6d858a;font-size:10px}
+.command{position:relative;border:1px solid rgba(255,255,255,.13);border-radius:31px;padding:14px;background:linear-gradient(145deg,rgba(255,255,255,.09),rgba(255,255,255,.025));box-shadow:var(--shadow)}
+.command:before{content:"";position:absolute;right:-70px;top:-80px;width:260px;height:260px;border-radius:50%;background:rgba(25,195,156,.18);filter:blur(4px)}
+.window{position:relative;background:#071a21;border:1px solid rgba(255,255,255,.09);border-radius:22px;overflow:hidden}
+.windowtop{height:48px;display:flex;align-items:center;padding:0 16px;border-bottom:1px solid var(--line);gap:7px}
+.wdot{width:7px;height:7px;border-radius:50%;background:#6f858a}.windowname{margin-left:8px;font:9px "Space Mono";color:#70888d}
+.windowbody{padding:20px}
+.kicker{display:flex;justify-content:space-between;align-items:center}.kicker b{font:700 19px Manrope;color:#fff}.online{font:9px "Space Mono";color:var(--mint);border:1px solid rgba(25,195,156,.25);border-radius:99px;padding:6px 8px}
+.sub{font-size:10px;color:#6d878c;margin-top:4px}
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:17px 0}
+.metric{padding:13px;border:1px solid rgba(255,255,255,.07);border-radius:14px;background:#0b252d}
+.metric small{font-size:9px;color:#718a90}.metric strong{display:block;font:700 18px Manrope;color:#fff;margin-top:5px}
+.activity{display:grid;gap:7px}
+.row{display:flex;align-items:center;gap:10px;padding:11px;background:#0c242c;border:1px solid rgba(255,255,255,.055);border-radius:12px}
+.ic{width:34px;height:34px;display:grid;place-items:center;border-radius:10px;background:rgba(25,195,156,.10);color:var(--mint)}
+.row b{font-size:11px;color:#fff}.row small{display:block;color:#70898e;font-size:9px;margin-top:2px}.status{margin-left:auto;font:8px "Space Mono";color:var(--mint)}
+.bottomline{display:flex;justify-content:space-between;color:#5f787d;font:8px "Space Mono";margin-top:14px}
 
-/* TRUST */
-.trust{background:#fff;color:#0b2027;border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid #e4e5df}
-.trust-grid{display:grid;grid-template-columns:repeat(4,1fr)}
-.trust-item{padding:21px 18px;border-right:1px solid #e4e5df;display:flex;gap:12px;align-items:center}
-.trust-item:last-child{border:0}
-.trust-item i{font-size:23px;color:var(--green2)}
-.trust-item strong{display:block;font-size:12px}.trust-item span{font-size:11px;color:#6f7f83}
+/* TRUST STRIP */
+.trust{background:#fff;color:#092028;border-bottom:1px solid #e3e4de}
+.trustgrid{display:grid;grid-template-columns:repeat(4,1fr)}
+.trustitem{padding:22px 17px;display:flex;align-items:center;gap:12px;border-right:1px solid #e2e3de}.trustitem:last-child{border:0}
+.trustitem i{font-size:22px;color:var(--mint2)}.trustitem strong{font-size:12px;display:block}.trustitem span{font-size:10px;color:#738286}
 
-/* LIGHT SECTIONS */
-.light{background:#f4f2ea;color:#0b2027}
-.light .section-head h2{color:#0b2027}
-.light .section-head p{color:#66777b}
-.light .eyebrow{color:var(--green2)}
-.solutions{display:grid;gap:14px}
-.solution{
-  display:grid;grid-template-columns:90px 1fr 1fr;gap:30px;align-items:start;
-  padding:32px;border:1px solid #dedfd9;border-radius:22px;background:rgba(255,255,255,.52);
-  transition:.3s
-}
-.solution:hover{background:#fff;transform:translateY(-3px);box-shadow:0 20px 50px rgba(18,37,43,.08)}
-.sol-num{font:700 12px "Space Mono";color:#8b9b9e}
-.sol-num span{display:block;font-size:9px;color:#aab5b7;margin-top:5px}
-.sol-title{display:flex;align-items:center;gap:11px;font-size:22px;color:#0b2027;margin-bottom:10px}
-.sol-icon{width:40px;height:40px;border-radius:12px;background:#e2f5f0;color:var(--green2);display:grid;place-items:center;font-size:18px}
-.sol-desc{font-size:14px;line-height:1.65;color:#697a7e}
-.features{display:grid;grid-template-columns:1fr 1fr;gap:9px}
-.features li{list-style:none;font-size:12px;color:#273d42;padding:9px 0;border-bottom:1px dashed #d6dbd9}
-.features li:before{content:"✓";color:var(--green2);margin-right:8px;font-weight:bold}
+/* LIGHT */
+.light{background:var(--cream);color:#092028}.light .head h2{color:#092028}.light .head p{color:#6a7b7f}.light .eyebrow{color:var(--mint2)}
+.solutions{display:grid;gap:13px}
+.solution{display:grid;grid-template-columns:80px 1fr 1fr;gap:28px;padding:30px;border:1px solid #dedfd9;border-radius:23px;background:rgba(255,255,255,.62);transition:.3s}
+.solution:hover{background:#fff;transform:translateY(-4px);box-shadow:0 22px 55px rgba(5,28,35,.08)}
+.number{font:700 11px "Space Mono";color:#87979a}.number span{display:block;font-size:8px;color:#a8b2b4;margin-top:5px}
+.title{display:flex;align-items:center;gap:10px;font:700 21px Manrope;color:#092028;margin-bottom:10px}
+.sicon{width:40px;height:40px;border-radius:12px;background:#e0f5ef;color:var(--mint2);display:grid;place-items:center}
+.desc{font-size:13px;line-height:1.65;color:#6a7b7f}
+.features{display:grid;grid-template-columns:1fr 1fr;gap:0 15px}.features li{list-style:none;padding:8px 0;border-bottom:1px dashed #d7dcda;font-size:11px;color:#294148}.features li:before{content:"✓";color:var(--mint2);font-weight:800;margin-right:7px}
 
 /* PRICING */
-.pricing{background:#081920}
-.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.price-card{
-  position:relative;padding:32px;border:1px solid rgba(255,255,255,.10);border-radius:25px;
-  background:linear-gradient(180deg,#0d252d,#091a21);transition:.3s
-}
-.price-card:hover{transform:translateY(-7px);box-shadow:0 25px 60px rgba(0,0,0,.25)}
-.price-card.featured{background:linear-gradient(145deg,#123b42,#0a6b5b);border-color:rgba(247,184,75,.5)}
-.ribbon{position:absolute;right:18px;top:18px;background:var(--gold);color:#07151b;padding:6px 10px;border-radius:999px;font:700 9px "Space Mono"}
-.tier{font:700 11px "Space Mono";letter-spacing:.12em;color:#82999e}
-.price{font:800 34px Manrope;color:#fff;margin:18px 0 6px}
-.price small{font:500 11px "Space Mono";color:#7e979c}
-.price-card h3{font-size:19px;color:#fff;margin:12px 0 9px}
-.price-card p{font-size:13px;color:#91a7ab;line-height:1.6;min-height:44px}
-.price-list{margin:22px 0;display:grid;gap:10px}
-.price-list li{list-style:none;color:#d2dfdf;font-size:12px}
-.price-list li:before{content:"+";color:var(--gold);margin-right:8px;font-weight:bold}
-.price-btn{width:100%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);color:#fff}
-.featured .price-btn{background:var(--gold);color:#07151b;border-color:var(--gold)}
-.enterprise{margin-bottom:25px;padding:15px 18px;border:1px solid rgba(255,255,255,.10);border-radius:16px;color:#8da4a8;font-size:12px}
-.enterprise b{color:#fff;margin-right:8px}
-.setup{margin-top:18px;color:#6e878c;font:10px "Space Mono"}
+.pricing{background:#081920}.pricegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.pricecard{position:relative;padding:30px;border:1px solid rgba(255,255,255,.10);border-radius:25px;background:linear-gradient(160deg,#102b33,#081a20);transition:.3s}
+.pricecard:hover{transform:translateY(-7px);box-shadow:0 25px 70px rgba(0,0,0,.28)}
+.pricecard.featured{background:linear-gradient(145deg,#124148,#08745f);border-color:rgba(244,185,79,.50)}
+.ribbon{position:absolute;top:17px;right:17px;background:var(--gold);color:var(--ink);font:700 8px "Space Mono";padding:7px 9px;border-radius:99px}
+.tier{font:700 10px "Space Mono";letter-spacing:.15em;color:#829a9f}
+.price{font:800 34px Manrope;color:#fff;margin:17px 0 5px}.price small{font:500 10px "Space Mono";color:#80999d}
+.pricecard h3{font-size:18px;color:#fff;margin:10px 0 7px}.pricecard>p{font-size:12px;line-height:1.55;color:#8ea5a9;min-height:40px}
+.pricefeatures{display:grid;gap:9px;margin:20px 0 23px}.pricefeatures li{list-style:none;font-size:11px;color:#d2dfdf}.pricefeatures li:before{content:"+";color:var(--gold);margin-right:8px;font-weight:bold}
+.pricebtn{width:100%;border:1px solid rgba(255,255,255,.13);background:rgba(255,255,255,.06);color:#fff}.featured .pricebtn{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+.enterprise{margin-bottom:18px;padding:15px 18px;border:1px solid rgba(255,255,255,.10);border-radius:15px;font-size:11px;color:#82999e}.enterprise b{color:#fff;margin-right:7px}
+.setup{font:9px "Space Mono";color:#627b80;margin-top:16px}
 
 /* VOICE */
-.voice{background:#f4f2ea;color:#0b2027}
-.voice-hero{display:grid;grid-template-columns:.9fr 1.1fr;gap:45px;align-items:center}
-.voice h2{font-size:clamp(34px,5vw,56px);line-height:1.02}
-.voice p{color:#66777b;line-height:1.7;margin:18px 0 24px}
-.brand-pills{display:flex;gap:9px;flex-wrap:wrap}
-.brand-pills span{background:#fff;border:1px solid #e1e4df;border-radius:999px;padding:8px 14px;font-size:11px;font-weight:700;color:#53676b}
-.phone-scene{
-  min-height:430px;border-radius:28px;position:relative;overflow:hidden;
-  background:
-    radial-gradient(circle at 72% 28%,rgba(24,194,156,.35),transparent 20%),
-    radial-gradient(circle at 20% 75%,rgba(247,184,75,.20),transparent 23%),
-    linear-gradient(145deg,#071920,#103840);
-  box-shadow:var(--shadow)
-}
-.phone-scene:before{
-  content:"";position:absolute;inset:0;opacity:.35;
-  background-image:linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px);
-  background-size:42px 42px;mask-image:linear-gradient(to bottom,black,transparent)
-}
-.phone-ui{
-  position:absolute;width:72%;right:7%;top:11%;background:rgba(7,21,27,.82);
-  border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:18px;backdrop-filter:blur(14px)
-}
-.phone-ui-head{display:flex;justify-content:space-between;color:#fff;font-size:12px;margin-bottom:13px}
-.call-bars{display:grid;gap:8px}
-.call-bar{height:38px;background:#102c34;border-radius:10px;display:flex;align-items:center;padding:0 11px;gap:10px;color:#d5e2e3;font-size:10px}
-.call-bar i{color:var(--green)}
-.phone-label{
-  position:absolute;left:7%;bottom:9%;max-width:360px;color:#fff
-}
-.phone-label small{font:700 9px "Space Mono";color:var(--gold);letter-spacing:.14em}
-.phone-label h3{font-size:28px;margin-top:8px}
-.phone-label p{color:#94a9ad;font-size:12px;margin:8px 0 0}
-.tech-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}
-.tech-card{padding:20px;border-radius:18px;background:#fff;border:1px solid #e1e4df}
-.tech-card i{font-size:22px;color:var(--green2)}
-.tech-card h3{font-size:15px;margin:16px 0 6px}.tech-card p{font-size:11px;color:#708084;line-height:1.5}
+.voice{background:var(--cream);color:#092028}.voicegrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:45px;align-items:center}
+.voice h2{font-size:clamp(38px,5vw,60px);line-height:1.01;color:#092028}.voicecopy{color:#697a7e;line-height:1.7;margin:18px 0 23px}
+.pills{display:flex;gap:8px;flex-wrap:wrap}.pills span{background:#fff;border:1px solid #e0e2dd;border-radius:99px;padding:8px 13px;font-size:10px;font-weight:800;color:#52676c}
+.scene{position:relative;min-height:440px;border-radius:29px;overflow:hidden;background:
+ radial-gradient(circle at 78% 20%,rgba(25,195,156,.30),transparent 19%),
+ radial-gradient(circle at 20% 80%,rgba(244,185,79,.18),transparent 22%),
+ linear-gradient(145deg,#071920,#103b44);box-shadow:var(--shadow)}
+.gridbg{position:absolute;inset:0;opacity:.32;background-image:linear-gradient(rgba(255,255,255,.065) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.065) 1px,transparent 1px);background-size:42px 42px}
+.callui{position:absolute;top:9%;right:7%;width:73%;padding:18px;border:1px solid rgba(255,255,255,.14);border-radius:20px;background:rgba(5,19,25,.78);backdrop-filter:blur(15px)}
+.callhead{display:flex;justify-content:space-between;color:#fff;font-size:11px;margin-bottom:12px}.live{color:var(--mint);font:8px "Space Mono"}
+.callrow{height:39px;display:flex;align-items:center;gap:9px;padding:0 10px;background:#102a32;border-radius:10px;margin-top:7px;color:#d8e4e5;font-size:9px}.callrow i{color:var(--mint)}.callrow span{margin-left:auto;color:#728b90}
+.sceneinfo{position:absolute;left:7%;right:7%;bottom:8%;color:#fff}.sceneinfo small{font:700 8px "Space Mono";color:var(--gold);letter-spacing:.15em}.sceneinfo h3{font-size:28px;margin-top:8px}.sceneinfo p{font-size:11px;line-height:1.6;color:#9ab0b4;margin-top:7px}
+.techgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:11px;margin-top:16px}.tech{padding:19px;background:#fff;border:1px solid #e1e3de;border-radius:18px}.tech i{font-size:21px;color:var(--mint2)}.tech h3{font-size:14px;margin:14px 0 6px;color:#092028}.tech p{font-size:10px;color:#748488;line-height:1.5}
+
+/* AI */
+.ai{background:#06161b;overflow:hidden}.aigrid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.ai .head{margin-bottom:0}.ai .head h2{font-size:clamp(38px,5.4vw,63px)}
+.aicard{position:relative;border:1px solid rgba(255,255,255,.11);border-radius:29px;padding:20px;background:linear-gradient(145deg,rgba(255,255,255,.07),rgba(255,255,255,.02));box-shadow:var(--shadow)}
+.aiwindow{border-radius:21px;background:#071a21;border:1px solid rgba(255,255,255,.08);padding:18px}
+.aihead{display:flex;align-items:center;gap:10px;padding-bottom:15px;border-bottom:1px solid var(--line)}.avatar{width:36px;height:36px;border-radius:12px;display:grid;place-items:center;background:#0c6b5a;color:#fff}.aihead b{font-size:12px;color:#fff}.aihead small{display:block;color:#6e888d;font-size:9px;margin-top:2px}
+.bubble{max-width:88%;padding:12px 14px;border-radius:15px;margin-top:13px;font-size:10px;line-height:1.55}.customer{background:#102a32;color:#d8e4e5}.bot{margin-left:auto;background:#0e705e;color:#ecfffb}
+.ai-tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:15px}.ai-tags span{font:8px "Space Mono";color:#7f999d;border:1px solid rgba(255,255,255,.08);border-radius:99px;padding:7px 8px}
 
 /* AFRICA */
-.africa{background:#fff}
-.africa-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:18px}
-.africa-card{position:relative;min-height:390px;border-radius:26px;overflow:hidden;padding:30px;display:flex;align-items:flex-end}
-.africa-card.big{min-height:470px}
-.africa-card:before{content:"";position:absolute;inset:0;background:
-  radial-gradient(circle at 70% 25%,rgba(24,194,156,.32),transparent 18%),
-  radial-gradient(circle at 25% 70%,rgba(247,184,75,.22),transparent 22%),
-  linear-gradient(145deg,#071920,#123c45 52%,#0b6b5b)}
-.africa-card:after{content:"";position:absolute;inset:0;background:
-  linear-gradient(135deg,transparent 48%,rgba(255,255,255,.06) 49%,transparent 50%),
-  linear-gradient(45deg,transparent 62%,rgba(255,255,255,.04) 63%,transparent 64%)}
-.africa-content{position:relative;z-index:2}
-.africa-tag{display:inline-block;padding:7px 10px;border:1px solid rgba(255,255,255,.18);border-radius:999px;background:rgba(255,255,255,.07);font:9px "Space Mono";color:var(--gold);letter-spacing:.12em}
-.africa-content h3{font-size:clamp(24px,3vw,38px);color:#fff;max-width:15ch;margin-top:12px}
-.africa-content p{color:#a9bec0;font-size:13px;max-width:50ch;margin-top:8px;line-height:1.6}
-.africa-side{display:grid;gap:18px}
-.africa-side .africa-card{min-height:226px}
-.network-orb{
-  position:absolute;right:12%;top:13%;width:130px;height:130px;border:1px solid rgba(255,255,255,.14);border-radius:50%
-}
-.network-orb:before,.network-orb:after{content:"";position:absolute;border:1px solid rgba(255,255,255,.11);border-radius:50%}
-.network-orb:before{inset:20px}.network-orb:after{inset:42px}
+.africa{background:#fff;color:#092028}.africagrid{display:grid;grid-template-columns:1.15fr .85fr;gap:16px}.africacard{position:relative;min-height:390px;border-radius:27px;overflow:hidden;padding:30px;display:flex;align-items:flex-end;background:
+ radial-gradient(circle at 72% 24%,rgba(25,195,156,.31),transparent 18%),
+ radial-gradient(circle at 20% 75%,rgba(244,185,79,.20),transparent 22%),
+ linear-gradient(145deg,#071920,#103d45 55%,#0b6759)}
+.africacard:after{content:"";position:absolute;inset:0;opacity:.4;background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);background-size:45px 45px;mask-image:linear-gradient(to bottom,#000,transparent)}
+.africacard.big{min-height:470px}.africacontent{position:relative;z-index:2}.tag{display:inline-block;font:8px "Space Mono";letter-spacing:.14em;color:var(--gold);padding:7px 9px;border:1px solid rgba(255,255,255,.16);border-radius:99px;background:rgba(255,255,255,.07)}
+.africacontent h3{font-size:clamp(26px,3.3vw,43px);color:#fff;max-width:15ch;margin-top:12px}.africacontent p{font-size:12px;color:#a5babd;line-height:1.6;max-width:52ch;margin-top:8px}
+.africaside{display:grid;gap:16px}.africaside .africacard{min-height:227px}
 
-/* WHY / CTA */
-.why{background:#f4f2ea;color:#0b2027}
-.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.why-card{background:#fff;border:1px solid #e2e3de;border-radius:20px;padding:27px;min-height:170px}
-.why-card .num{font:700 10px "Space Mono";color:#87989b}
-.why-card h3{font-size:18px;margin:23px 0 7px}.why-card p{font-size:12px;color:#708084;line-height:1.55}
-.cta{padding:110px 0;background:
-  radial-gradient(circle at 20% 10%,rgba(247,184,75,.16),transparent 25%),
-  radial-gradient(circle at 90% 90%,rgba(24,194,156,.20),transparent 28%),
-  linear-gradient(135deg,#0b6b5b,#0b3038 60%,#07151b);text-align:center}
-.cta h2{font-size:clamp(38px,6vw,66px);line-height:1;color:#fff;max-width:800px;margin:0 auto}
-.cta p{color:#9db3b7;max-width:610px;margin:20px auto 30px;line-height:1.7}
-.cta-actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
+/* WHY + CTA */
+.why{background:var(--cream);color:#092028}.why .head h2{color:#092028}
+.whygrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.whycard{padding:26px;background:#fff;border:1px solid #e0e2dc;border-radius:20px;min-height:165px}.whycard .n{font:700 9px "Space Mono";color:#8b999c}.whycard h3{font-size:17px;margin:22px 0 7px}.whycard p{font-size:11px;color:#748488;line-height:1.55}
+.cta{padding:115px 0;text-align:center;background:radial-gradient(circle at 18% 5%,rgba(244,185,79,.16),transparent 24%),radial-gradient(circle at 90% 90%,rgba(25,195,156,.20),transparent 28%),linear-gradient(135deg,#0b6b5a,#0a3038 60%,#061116)}
+.cta .eyebrow{justify-content:center}.cta h2{font-size:clamp(40px,6vw,70px);line-height:.98;color:#fff;max-width:850px;margin:auto}.cta p{max-width:620px;margin:20px auto 29px;color:#9db3b6;line-height:1.7}.center{justify-content:center}
 
 /* FOOTER */
-footer{background:#061217;padding:48px 0 25px}
-.footer-top{display:flex;justify-content:space-between;gap:25px;align-items:flex-end;padding-bottom:28px;border-bottom:1px solid var(--line)}
-.footer-tags{color:#70878c;font:10px "Space Mono";margin-top:9px}
-.footer-contact{text-align:right}.footer-contact a{display:block}.footer-email{font:11px "Space Mono";color:#8da4a8}.footer-phone{font:700 18px Manrope;color:#fff;margin-top:7px}
-.footer-bottom{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;color:#60777c;font:10px "Space Mono";padding-top:20px}
-.float-wa{
-  position:fixed;right:20px;bottom:20px;z-index:200;display:flex;align-items:center;gap:8px;
-  padding:13px 17px;border-radius:999px;background:#13a985;color:#fff;font-size:12px;font-weight:700;
-  box-shadow:0 15px 35px rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.16)
-}
-.float-wa:hover{transform:translateY(-3px);background:#18c29c}
+footer{background:#051015;padding:48px 0 23px}.footertop{display:flex;justify-content:space-between;align-items:flex-end;gap:25px;padding-bottom:27px;border-bottom:1px solid var(--line)}.footertags{font:9px "Space Mono";color:#647d82;margin-top:8px}.contact{text-align:right}.contact a{display:block}.femail{font:10px "Space Mono";color:#8ca4a8}.fphone{font:700 18px Manrope;color:#fff;margin-top:7px}.footerbottom{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;padding-top:19px;font:8px "Space Mono";color:#5d757a}
+.float{position:fixed;z-index:2000;right:19px;bottom:19px;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:#13aa88;color:#fff;box-shadow:0 15px 35px rgba(0,0,0,.30);font-size:23px;transition:.25s}.float:hover{transform:translateY(-4px);background:var(--mint)}
 
-/* MOBILE */
-@media(max-width:1050px){
-  .desktop-nav{display:none}.menu{display:grid;place-items:center}
-  .nav-right .nav-email{display:none}
-  .hero-grid,.voice-hero,.africa-grid{grid-template-columns:1fr}
-  .dashboard{max-width:720px}
-  .tech-grid{grid-template-columns:repeat(2,1fr)}
-}
-@media(max-width:800px){
-  .wrap{width:min(var(--max),calc(100% - 34px))}
-  .section{padding:75px 0}
-  .hero{padding:65px 0 75px}
-  .trust-grid{grid-template-columns:1fr 1fr}
-  .trust-item{border-bottom:1px solid #e4e5df}
-  .solution{grid-template-columns:1fr;gap:14px}
-  .features{grid-template-columns:1fr}
-  .price-grid{grid-template-columns:1fr}
-  .phone-scene{min-height:380px}
-  .why-grid{grid-template-columns:1fr 1fr}
-}
-@media(max-width:560px){
-  .logo{font-size:17px}.nav-cta{padding:11px 14px;font-size:11px}
-  .hero h1{font-size:clamp(45px,14vw,67px)}
-  .hero-copy{font-size:16px}
-  .hero-actions .btn{width:100%}
-  .metric-grid{grid-template-columns:1fr}
-  .trust-grid,.tech-grid,.why-grid{grid-template-columns:1fr}
-  .trust-item{border-right:0}
-  .dashboard{padding:12px;border-radius:22px}
-  .dash-main{padding:16px}
-  .phone-ui{width:88%;right:6%}.phone-label{left:6%;right:6%}
-  .phone-label h3{font-size:23px}
-  .africa-card,.africa-card.big,.africa-side .africa-card{min-height:330px}
-  .footer-top{align-items:flex-start;flex-direction:column}.footer-contact{text-align:left}
-  .float-wa{width:52px;height:52px;padding:0;justify-content:center;right:15px;bottom:15px}.float-wa span{display:none}
-}
-@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
-.reveal{opacity:0;transform:translateY(22px);transition:.7s ease}
-.reveal.show{opacity:1;transform:none}
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}.reveal.show{opacity:1;transform:none}
+
+/* RESPONSIVE */
+@media(max-width:1050px){.links{display:none}.menu{display:grid;place-items:center}.navright .email{display:none}.herogrid,.voicegrid,.aigrid,.africagrid{grid-template-columns:1fr}.command{max-width:740px}.techgrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:800px){.wrap{width:min(var(--max),calc(100% - 34px))}.section{padding:78px 0}.hero{padding:62px 0 75px}.trustgrid{grid-template-columns:1fr 1fr}.trustitem{border-bottom:1px solid #e2e3de}.solution{grid-template-columns:1fr;gap:13px}.pricegrid{grid-template-columns:1fr}.whygrid{grid-template-columns:1fr 1fr}.scene{min-height:390px}}
+@media(max-width:560px){.logo{font-size:17px}.cta-mini{padding:11px 13px;font-size:10px}.hero h1{font-size:clamp(46px,14vw,68px)}.hero p{font-size:16px}.actions .btn{width:100%}.metrics{grid-template-columns:1fr}.trustgrid,.techgrid,.whygrid{grid-template-columns:1fr}.trustitem{border-right:0}.features{grid-template-columns:1fr}.callui{width:88%;right:6%}.sceneinfo h3{font-size:23px}.africacard,.africacard.big,.africaside .africacard{min-height:330px}.footertop{flex-direction:column;align-items:flex-start}.contact{text-align:left}.float{width:52px;height:52px;right:14px;bottom:14px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{transition:none}}
 </style>
 </head>
 
-<body id="top">
-
+<body>
 <header class="nav">
-  <div class="wrap nav-inner">
-    <a href="#top" class="logo"><span class="logo-dot"></span>NiaCloud <b>Technologies</b></a>
-    <nav class="desktop-nav">
-      <a href="#solutions">Solutions</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#voice">VoIP & SIP</a>
-      <a href="#why">Why NiaCloud</a>
-    </nav>
-    <div class="nav-right">
-      <a class="nav-email" href="mailto:info@niacloud.co.ke">info@niacloud.co.ke</a>
-      <a class="nav-cta" href="https://wa.me/254747316282"><i class="bi bi-whatsapp"></i> 0747 316 282</a>
-      <button class="menu" id="menu" aria-label="Open menu"><i class="bi bi-list"></i></button>
-    </div>
+ <div class="wrap navrow">
+  <a class="logo" href="#top"><span class="dot"></span>NiaCloud <em>Technologies</em></a>
+  <nav class="links">
+   <a href="#solutions">Solutions</a><a href="#pricing">Pricing</a><a href="#voice">VoIP & SIP</a><a href="#ai">AI</a><a href="#why">Why us</a>
+  </nav>
+  <div class="navright">
+   <a class="email" href="mailto:info@niacloud.co.ke">info@niacloud.co.ke</a>
+   <a class="cta-mini" href="https://wa.me/254747316282"><i class="bi bi-whatsapp"></i> 0747 316 282</a>
+   <button class="menu" id="menu" aria-label="Menu"><i class="bi bi-list"></i></button>
   </div>
-  <div id="mobileNav" style="display:none;background:#0a2027;border-top:1px solid var(--line)">
-    <div class="wrap" style="padding:12px 0 18px">
-      <a href="#solutions" style="display:block;padding:12px 0;border-bottom:1px solid var(--line)">Solutions</a>
-      <a href="#pricing" style="display:block;padding:12px 0;border-bottom:1px solid var(--line)">Pricing</a>
-      <a href="#voice" style="display:block;padding:12px 0;border-bottom:1px solid var(--line)">VoIP & SIP</a>
-      <a href="#why" style="display:block;padding:12px 0">Why NiaCloud</a>
-    </div>
+ </div>
+ <div id="mobile" style="display:none;background:#0a2027;border-top:1px solid var(--line)">
+  <div class="wrap" style="padding:9px 0 16px">
+   <a href="#solutions" style="display:block;padding:12px 0;border-bottom:1px solid var(--line)">Solutions</a>
+   <a href="#pricing" style="display:block;padding:12px 0;border-bottom:1px solid var(--line)">Pricing</a>
+   <a href="#voice" style="display:block;padding:12px 0;border-bottom:1px solid var(--line)">VoIP & SIP</a>
+   <a href="#ai" style="display:block;padding:12px 0;border-bottom:1px solid var(--line)">AI</a>
+   <a href="#why" style="display:block;padding:12px 0">Why NiaCloud</a>
   </div>
+ </div>
 </header>
 
-<main>
-
+<main id="top">
 <section class="hero">
-  <div class="wrap hero-grid">
-    <div class="reveal">
-      <div class="eyebrow">Cloud Business Technology</div>
-      <h1>Build a business that <span>stays connected.</span></h1>
-      <p class="hero-copy">NiaCloud brings AI, WhatsApp, cloud software, VoIP, SIP, call centre tools and Bulk SMS into one modern communication ecosystem.</p>
-      <div class="hero-actions">
-        <a class="btn btn-gold" href="https://wa.me/254747316282">Start a conversation <i class="bi bi-arrow-up-right"></i></a>
-        <a class="btn btn-outline" href="#solutions">Explore solutions <i class="bi bi-arrow-down"></i></a>
-      </div>
-      <div class="hero-meta">
-        <span><i class="bi bi-check-circle-fill"></i> Cloud-first</span>
-        <span><i class="bi bi-check-circle-fill"></i> Built for growing teams</span>
-        <span><i class="bi bi-check-circle-fill"></i> Human technical support</span>
-      </div>
-    </div>
-
-    <div class="dashboard reveal">
-      <div class="dash-top">
-        <span class="dash-brand">NIACLOUD COMMAND CENTRE</span>
-        <span class="live">LIVE PLATFORM</span>
-      </div>
-      <div class="dash-main">
-        <div class="dash-title">Business Communication Hub</div>
-        <div class="dash-sub">One connected view of customer communication.</div>
-        <div class="metric-grid">
-          <div class="metric"><small>Channels</small><strong>04</strong></div>
-          <div class="metric"><small>Access</small><strong>24/7</strong></div>
-          <div class="metric"><small>Mode</small><strong>Cloud</strong></div>
-        </div>
-        <div class="channel-list">
-          <div class="channel"><span class="channel-icon"><i class="bi bi-whatsapp"></i></span><div><b>WhatsApp Cloud</b><small>Lead management & conversations</small></div><span class="channel-status">ONLINE</span></div>
-          <div class="channel"><span class="channel-icon"><i class="bi bi-headset"></i></span><div><b>Call Centre</b><small>Agents, CDR & call activity</small></div><span class="channel-status">READY</span></div>
-          <div class="channel"><span class="channel-icon"><i class="bi bi-chat-square-text"></i></span><div><b>Bulk SMS</b><small>Campaigns & notifications</small></div><span class="channel-status">ACTIVE</span></div>
-          <div class="channel"><span class="channel-icon"><i class="bi bi-cloud-check"></i></span><div><b>Cloud Software</b><small>Anywhere access for your team</small></div><span class="channel-status">LIVE</span></div>
-        </div>
-        <div class="dash-foot"><span>AI • CLOUD • VOICE • SMS</span><span>One platform</span></div>
-      </div>
-    </div>
+ <div class="wrap herogrid">
+  <div class="reveal">
+   <div class="eyebrow">AI • Cloud • Voice • Software</div>
+   <h1>Connect smarter.<br><span class="gradient">Grow faster.</span></h1>
+   <p>NiaCloud Technologies gives modern businesses one connected technology layer for WhatsApp, AI, cloud software, VoIP, SIP, call centres and Bulk SMS.</p>
+   <div class="actions">
+    <a class="btn gold" href="https://wa.me/254747316282">Talk to NiaCloud <i class="bi bi-arrow-up-right"></i></a>
+    <a class="btn ghost" href="#solutions">Explore platform <i class="bi bi-arrow-down"></i></a>
+   </div>
+   <div class="meta"><span><i class="bi bi-check-circle-fill"></i> Cloud-first</span><span><i class="bi bi-check-circle-fill"></i> Built for SMEs</span><span><i class="bi bi-check-circle-fill"></i> Scalable</span></div>
   </div>
+
+  <div class="command reveal">
+   <div class="window">
+    <div class="windowtop"><span class="wdot"></span><span class="wdot"></span><span class="wdot"></span><span class="windowname">NIACLOUD COMMAND CENTRE</span></div>
+    <div class="windowbody">
+     <div class="kicker"><b>Business Communication</b><span class="online">● LIVE</span></div>
+     <div class="sub">Your channels. Your team. One connected view.</div>
+     <div class="metrics"><div class="metric"><small>Channels</small><strong>04</strong></div><div class="metric"><small>Access</small><strong>24/7</strong></div><div class="metric"><small>Platform</small><strong>Cloud</strong></div></div>
+     <div class="activity">
+      <div class="row"><span class="ic"><i class="bi bi-whatsapp"></i></span><div><b>WhatsApp Cloud</b><small>Leads & conversations</small></div><span class="status">ONLINE</span></div>
+      <div class="row"><span class="ic"><i class="bi bi-headset"></i></span><div><b>Call Centre</b><small>Agents & CDR</small></div><span class="status">READY</span></div>
+      <div class="row"><span class="ic"><i class="bi bi-chat-square-text"></i></span><div><b>Bulk SMS</b><small>Campaigns & alerts</small></div><span class="status">ACTIVE</span></div>
+      <div class="row"><span class="ic"><i class="bi bi-cloud-check"></i></span><div><b>Cloud Software</b><small>Anywhere access</small></div><span class="status">LIVE</span></div>
+     </div>
+     <div class="bottomline"><span>AI • CLOUD • VOICE • SMS</span><span>ONE PLATFORM</span></div>
+    </div>
+   </div>
+  </div>
+ </div>
 </section>
 
 <section class="trust">
-  <div class="wrap trust-grid">
-    <div class="trust-item"><i class="bi bi-cloud-check"></i><div><strong>Cloud-first</strong><span>Anywhere access</span></div></div>
-    <div class="trust-item"><i class="bi bi-lightning-charge"></i><div><strong>Fast deployment</strong><span>Practical setup</span></div></div>
-    <div class="trust-item"><i class="bi bi-shield-check"></i><div><strong>Business ready</strong><span>Built to scale</span></div></div>
-    <div class="trust-item"><i class="bi bi-headset"></i><div><strong>Human support</strong><span>Real technical assistance</span></div></div>
-  </div>
+ <div class="wrap trustgrid">
+  <div class="trustitem"><i class="bi bi-cloud-check"></i><div><strong>Cloud-first</strong><span>Anywhere access</span></div></div>
+  <div class="trustitem"><i class="bi bi-lightning-charge"></i><div><strong>Fast deployment</strong><span>Practical setup</span></div></div>
+  <div class="trustitem"><i class="bi bi-shield-check"></i><div><strong>Business ready</strong><span>Built to scale</span></div></div>
+  <div class="trustitem"><i class="bi bi-headset"></i><div><strong>Human support</strong><span>Technical assistance</span></div></div>
+ </div>
 </section>
 
 <section id="solutions" class="section light">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div class="eyebrow">Our Solutions</div>
-      <h2>Everything your team needs to communicate better.</h2>
-      <p>Integrated cloud tools designed to simplify customer communication, lead management and business operations.</p>
-    </div>
-
-    <div class="solutions">
-      <article class="solution reveal">
-        <div class="sol-num">01<span>CHANNEL</span></div>
-        <div><h3 class="sol-title"><span class="sol-icon"><i class="bi bi-whatsapp"></i></span>WhatsApp Cloud Leads</h3><p class="sol-desc">Capture, organize and manage WhatsApp customer leads through a centralized cloud dashboard.</p></div>
-        <ul class="features"><li>WhatsApp Cloud lead collection</li><li>Centralized leads dashboard</li><li>Customer follow-ups</li><li>Conversation management</li><li>Team access & management</li><li>Cloud access anywhere</li></ul>
-      </article>
-
-      <article class="solution reveal">
-        <div class="sol-num">02<span>VOICE</span></div>
-        <div><h3 class="sol-title"><span class="sol-icon"><i class="bi bi-headset"></i></span>Call Centre Management</h3><p class="sol-desc">Manage call centre operations from one centralized dashboard with Yeastar CDR integration.</p></div>
-        <ul class="features"><li>Call records & history</li><li>Yeastar CDR integration</li><li>Call tracking</li><li>Agent performance monitoring</li><li>Customer call management</li><li>Centralized call dashboard</li></ul>
-      </article>
-
-      <article class="solution reveal">
-        <div class="sol-num">03<span>MESSAGING</span></div>
-        <div><h3 class="sol-title"><span class="sol-icon"><i class="bi bi-chat-square-text"></i></span>Bulk SMS</h3><p class="sol-desc">Reach thousands of customers with customized, targeted SMS campaigns.</p></div>
-        <ul class="features"><li>Promotional campaigns</li><li>Customer notifications</li><li>Marketing messages</li><li>Reminders</li><li>Customer follow-ups</li><li>Announcements</li></ul>
-      </article>
-    </div>
+ <div class="wrap">
+  <div class="head reveal"><div class="eyebrow">01 — Solutions</div><h2>Everything your business needs to stay connected.</h2><p>Bring customer communication, voice operations and messaging into a cleaner, more manageable digital workflow.</p></div>
+  <div class="solutions">
+   <article class="solution reveal"><div class="number">01<span>CHANNEL</span></div><div><div class="title"><span class="sicon"><i class="bi bi-whatsapp"></i></span>WhatsApp Cloud Leads</div><p class="desc">Capture, organize and manage WhatsApp customer leads through a centralized cloud dashboard.</p></div><ul class="features"><li>WhatsApp Cloud lead collection</li><li>Centralized leads dashboard</li><li>Customer follow-ups</li><li>Conversation management</li><li>Team access & management</li><li>Cloud access anywhere</li></ul></article>
+   <article class="solution reveal"><div class="number">02<span>VOICE</span></div><div><div class="title"><span class="sicon"><i class="bi bi-headset"></i></span>Call Centre Management</div><p class="desc">Manage call centre operations from one centralized dashboard with Yeastar CDR integration.</p></div><ul class="features"><li>Call records & history</li><li>Yeastar CDR integration</li><li>Call tracking</li><li>Agent performance monitoring</li><li>Customer call management</li><li>Centralized call dashboard</li></ul></article>
+   <article class="solution reveal"><div class="number">03<span>MESSAGING</span></div><div><div class="title"><span class="sicon"><i class="bi bi-chat-square-text"></i></span>Bulk SMS</div><p class="desc">Reach thousands of customers with customized, targeted SMS campaigns.</p></div><ul class="features"><li>Promotional campaigns</li><li>Customer notifications</li><li>Marketing messages</li><li>Reminders</li><li>Customer follow-ups</li><li>Announcements</li></ul></article>
   </div>
+ </div>
 </section>
 
 <section id="pricing" class="section pricing">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div class="eyebrow">Monthly Packages for SMEs</div>
-      <h2>Simple pricing. Powerful solutions.</h2>
-      <p>Choose the package that fits your business communication needs.</p>
-    </div>
-    <div class="enterprise reveal"><b>Corporate & Enterprise</b> Customized pricing is available for larger organizations based on business requirements, usage and AI consumption.</div>
-
-    <div class="price-grid">
-      <article class="price-card reveal">
-        <div class="tier">BRONZE</div><div class="price">KES 7,500 <small>/ month</small></div>
-        <h3>WhatsApp Cloud Leads</h3><p>A powerful foundation for managing your WhatsApp leads.</p>
-        <ul class="price-list"><li>WhatsApp Cloud lead collection</li><li>Leads management dashboard</li><li>Customer follow-up management</li><li>Cloud-based access</li><li>PWA support</li></ul>
-        <a class="btn price-btn" href="https://wa.me/254747316282">Choose Bronze</a>
-      </article>
-
-      <article class="price-card reveal">
-        <div class="tier">SILVER</div><div class="price">KES 12,500 <small>/ month</small></div>
-        <h3>WhatsApp + Call Centre</h3><p>Combine WhatsApp lead management with call centre operations.</p>
-        <ul class="price-list"><li>Everything in Bronze</li><li>Call Centre Management</li><li>Yeastar CDR integration</li><li>Call records & tracking</li><li>Call activity monitoring</li><li>Agent call management</li></ul>
-        <a class="btn price-btn" href="https://wa.me/254747316282">Choose Silver</a>
-      </article>
-
-      <article class="price-card featured reveal">
-        <span class="ribbon">MOST COMPLETE</span>
-        <div class="tier">GOLD</div><div class="price">KES 17,000 <small>/ month</small></div>
-        <h3>Complete Communication Platform</h3><p>The complete communication solution for growing businesses.</p>
-        <ul class="price-list"><li>Everything in Silver</li><li>Bulk SMS platform</li><li>Customized SMS campaigns</li><li>Customer notifications</li><li>Marketing & promotional SMS</li><li>WhatsApp Leads Management</li><li>Call Centre Management</li><li>Yeastar CDR integration</li></ul>
-        <a class="btn price-btn" href="https://wa.me/254747316282">Choose Gold</a>
-      </article>
-    </div>
-    <div class="setup">All NiaCloud packages are subject to an initial one-off setup fee.</div>
+ <div class="wrap">
+  <div class="head reveal"><div class="eyebrow">02 — Pricing</div><h2>Simple packages. Serious capability.</h2><p>Start with the communication stack your business needs today, then scale as you grow.</p></div>
+  <div class="enterprise reveal"><b>Corporate & Enterprise</b> Customized pricing is available for larger organizations based on business requirements, usage and AI consumption.</div>
+  <div class="pricegrid">
+   <article class="pricecard reveal"><div class="tier">BRONZE</div><div class="price">KES 7,500 <small>/ month</small></div><h3>WhatsApp Cloud Leads</h3><p>A powerful foundation for managing your WhatsApp leads.</p><ul class="pricefeatures"><li>WhatsApp Cloud lead collection</li><li>Leads management dashboard</li><li>Customer follow-up management</li><li>Cloud-based access</li><li>PWA support</li></ul><a class="btn pricebtn" href="https://wa.me/254747316282">Choose Bronze</a></article>
+   <article class="pricecard reveal"><div class="tier">SILVER</div><div class="price">KES 12,500 <small>/ month</small></div><h3>WhatsApp + Call Centre</h3><p>Combine WhatsApp lead management with call centre operations.</p><ul class="pricefeatures"><li>Everything in Bronze</li><li>Call Centre Management</li><li>Yeastar CDR integration</li><li>Call records & tracking</li><li>Call activity monitoring</li><li>Agent call management</li></ul><a class="btn pricebtn" href="https://wa.me/254747316282">Choose Silver</a></article>
+   <article class="pricecard featured reveal"><span class="ribbon">MOST COMPLETE</span><div class="tier">GOLD</div><div class="price">KES 17,000 <small>/ month</small></div><h3>Complete Communication Platform</h3><p>The complete communication solution for growing businesses.</p><ul class="pricefeatures"><li>Everything in Silver</li><li>Bulk SMS platform</li><li>Customized SMS campaigns</li><li>Customer notifications</li><li>Marketing & promotional SMS</li><li>WhatsApp Leads Management</li><li>Call Centre Management</li><li>Yeastar CDR integration</li></ul><a class="btn pricebtn" href="https://wa.me/254747316282">Choose Gold</a></article>
   </div>
+  <div class="setup">All NiaCloud packages are subject to an initial one-off setup fee.</div>
+ </div>
 </section>
 
 <section id="voice" class="section voice">
-  <div class="wrap">
-    <div class="voice-hero">
-      <div class="reveal">
-        <div class="eyebrow">VoIP & SIP Telephony</div>
-        <h2>Professional voice infrastructure for modern teams.</h2>
-        <p>Build a complete business phone system with SIP, extensions, call routing, IP phones, PBX integration and professional installation.</p>
-        <div class="brand-pills"><span>Fanvil</span><span>Yealink</span><span>Yeastar</span><span>SIP</span><span>PBX</span></div>
-      </div>
-
-      <div class="phone-scene reveal">
-        <div class="phone-ui">
-          <div class="phone-ui-head"><b>Call Centre Monitor</b><span style="color:var(--green)">LIVE</span></div>
-          <div class="call-bars">
-            <div class="call-bar"><i class="bi bi-telephone-fill"></i> Reception <span style="margin-left:auto;color:#7f989d">Extension 101</span></div>
-            <div class="call-bar"><i class="bi bi-telephone-fill"></i> Sales <span style="margin-left:auto;color:#7f989d">Extension 202</span></div>
-            <div class="call-bar"><i class="bi bi-telephone-fill"></i> Support <span style="margin-left:auto;color:#7f989d">Extension 303</span></div>
-            <div class="call-bar"><i class="bi bi-diagram-3-fill"></i> SIP Trunk <span style="margin-left:auto;color:var(--green)">CONNECTED</span></div>
-          </div>
-        </div>
-        <div class="phone-label"><small>SIP • PBX • IP TELEPHONY</small><h3>Connect every conversation to your business.</h3><p>Professional voice infrastructure for offices, call centres, remote teams and growing enterprises.</p></div>
-      </div>
-    </div>
-
-    <div class="tech-grid">
-      <article class="tech-card"><i class="bi bi-phone"></i><h3>IP Phones</h3><p>Business-grade SIP phones, extensions and desk communication.</p></article>
-      <article class="tech-card"><i class="bi bi-diagram-3"></i><h3>Cloud PBX</h3><p>Centralized extensions, IVR, queues, routing and call management.</p></article>
-      <article class="tech-card"><i class="bi bi-globe2"></i><h3>SIP Trunks</h3><p>Connect your PBX to reliable voice carriers and business numbers.</p></article>
-      <article class="tech-card"><i class="bi bi-headset"></i><h3>Call Centre</h3><p>Monitor agents, call activity, recordings and customer interactions.</p></article>
-    </div>
+ <div class="wrap">
+  <div class="voicegrid">
+   <div class="reveal"><div class="eyebrow">03 — VoIP & SIP</div><h2>Give your business a phone system built for today.</h2><p class="voicecopy">Professional SIP telephony, IP phones, cloud PBX, call routing and call-centre infrastructure for modern teams.</p><div class="pills"><span>Fanvil</span><span>Yealink</span><span>Yeastar</span><span>SIP</span><span>PBX</span></div></div>
+   <div class="scene reveal"><div class="gridbg"></div><div class="callui"><div class="callhead"><b>Call Centre Monitor</b><span class="live">● LIVE</span></div><div class="callrow"><i class="bi bi-telephone-fill"></i> Reception <span>EXT 101</span></div><div class="callrow"><i class="bi bi-telephone-fill"></i> Sales <span>EXT 202</span></div><div class="callrow"><i class="bi bi-telephone-fill"></i> Support <span>EXT 303</span></div><div class="callrow"><i class="bi bi-diagram-3-fill"></i> SIP Trunk <span style="color:#19c39c">CONNECTED</span></div></div><div class="sceneinfo"><small>SIP • PBX • IP TELEPHONY</small><h3>Every conversation, connected to your business.</h3><p>For offices, call centres, remote teams and growing enterprises.</p></div></div>
   </div>
+  <div class="techgrid">
+   <div class="tech"><i class="bi bi-phone"></i><h3>IP Phones</h3><p>Business-grade SIP phones, extensions and desk communication.</p></div>
+   <div class="tech"><i class="bi bi-diagram-3"></i><h3>Cloud PBX</h3><p>Extensions, IVR, queues, routing and call management.</p></div>
+   <div class="tech"><i class="bi bi-globe2"></i><h3>SIP Trunks</h3><p>Connect your PBX to reliable voice carriers and business numbers.</p></div>
+   <div class="tech"><i class="bi bi-headset"></i><h3>Call Centre</h3><p>Monitor agents, call activity, recordings and interactions.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="ai" class="section ai">
+ <div class="wrap aigrid">
+  <div class="head reveal"><div class="eyebrow">04 — AI & Automation</div><h2>Turn repetitive conversations into intelligent workflows.</h2><p>Use AI and automation to help your team handle enquiries, route conversations, support customers and keep work moving.</p><div class="actions" style="margin-top:25px"><a class="btn gold" href="mailto:info@niacloud.co.ke">Discuss an AI solution <i class="bi bi-arrow-up-right"></i></a></div></div>
+  <div class="aicard reveal"><div class="aiwindow"><div class="aihead"><span class="avatar"><i class="bi bi-stars"></i></span><div><b>NiaCloud AI Assistant</b><small>Customer communication automation</small></div></div><div class="bubble customer">Hello, I would like to know more about your services.</div><div class="bubble bot">Absolutely. I can help you with WhatsApp, call centre, Bulk SMS, VoIP and cloud solutions. Which service would you like to explore?</div><div class="ai-tags"><span>LEAD CAPTURE</span><span>AUTOMATION</span><span>ROUTING</span><span>SUPPORT</span></div></div></div>
+ </div>
 </section>
 
 <section class="section africa">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div class="eyebrow">Built for Africa</div>
-      <h2>Technology that feels local. Works globally.</h2>
-      <p>From African entrepreneurs and growing SMEs to modern contact centres, NiaCloud builds practical communication technology around how businesses operate.</p>
-    </div>
-    <div class="africa-grid">
-      <article class="africa-card big reveal">
-        <div class="network-orb"></div>
-        <div class="africa-content"><span class="africa-tag">KENYA • AFRICA</span><h3>Modern technology for ambitious businesses.</h3><p>Connect customers, teams and operations through a single technology layer designed for real-world business.</p></div>
-      </article>
-      <div class="africa-side">
-        <article class="africa-card reveal"><div class="africa-content"><span class="africa-tag">CUSTOMER EXPERIENCE</span><h3>Connected teams & call centres.</h3><p>Turn every call and conversation into an organized customer journey.</p></div></article>
-        <article class="africa-card reveal"><div class="africa-content"><span class="africa-tag">DIGITAL GROWTH</span><h3>Cloud tools that scale with you.</h3><p>Start with what you need and expand as your business grows.</p></div></article>
-      </div>
-    </div>
+ <div class="wrap">
+  <div class="head reveal"><div class="eyebrow" style="color:var(--mint2)">05 — Built for Africa</div><h2 style="color:#092028">Local understanding. Global technology.</h2><p style="color:#6a7b7f">NiaCloud builds practical communication technology for African businesses while keeping the platform ready for modern, connected teams.</p></div>
+  <div class="africagrid">
+   <article class="africacard big reveal"><div class="africacontent"><span class="tag">KENYA • AFRICA</span><h3>Technology for ambitious businesses.</h3><p>Connect customers, teams and operations through a modern technology layer designed for real-world business.</p></div></article>
+   <div class="africaside">
+    <article class="africacard reveal"><div class="africacontent"><span class="tag">CUSTOMER EXPERIENCE</span><h3>Connected teams & call centres.</h3><p>Turn calls and conversations into an organized customer journey.</p></div></article>
+    <article class="africacard reveal"><div class="africacontent"><span class="tag">DIGITAL GROWTH</span><h3>Cloud tools that scale with you.</h3><p>Start with what you need and expand as your business grows.</p></div></article>
+   </div>
   </div>
+ </div>
 </section>
 
 <section id="why" class="section why">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div class="eyebrow">Why NiaCloud</div>
-      <h2>One platform. Multiple communication channels.</h2>
-    </div>
-    <div class="why-grid">
-      <article class="why-card reveal"><span class="num">01</span><h3>Capture More Leads</h3><p>Turn conversations into opportunities.</p></article>
-      <article class="why-card reveal"><span class="num">02</span><h3>Manage Customers</h3><p>Keep your customer communication organized.</p></article>
-      <article class="why-card reveal"><span class="num">03</span><h3>Monitor Calls</h3><p>Track call activity and team performance.</p></article>
-      <article class="why-card reveal"><span class="num">04</span><h3>Reach Customers</h3><p>Connect instantly through SMS and WhatsApp.</p></article>
-      <article class="why-card reveal"><span class="num">05</span><h3>Work Anywhere</h3><p>Access your platform from virtually anywhere.</p></article>
-      <article class="why-card reveal"><span class="num">06</span><h3>Automate</h3><p>Reduce repetitive work and improve efficiency.</p></article>
-    </div>
+ <div class="wrap">
+  <div class="head reveal"><div class="eyebrow" style="color:var(--mint2)">06 — Why NiaCloud</div><h2>One technology partner for your communication stack.</h2></div>
+  <div class="whygrid">
+   <article class="whycard reveal"><span class="n">01</span><h3>Capture More Leads</h3><p>Turn conversations into opportunities.</p></article>
+   <article class="whycard reveal"><span class="n">02</span><h3>Manage Customers</h3><p>Keep customer communication organized.</p></article>
+   <article class="whycard reveal"><span class="n">03</span><h3>Monitor Calls</h3><p>Track call activity and team performance.</p></article>
+   <article class="whycard reveal"><span class="n">04</span><h3>Reach Customers</h3><p>Connect through SMS and WhatsApp.</p></article>
+   <article class="whycard reveal"><span class="n">05</span><h3>Work Anywhere</h3><p>Access your platform from virtually anywhere.</p></article>
+   <article class="whycard reveal"><span class="n">06</span><h3>Automate</h3><p>Reduce repetitive work and improve efficiency.</p></article>
   </div>
+ </div>
 </section>
 
 <section class="cta">
-  <div class="wrap">
-    <div class="eyebrow">Get Started Today</div>
-    <h2>Make your business smarter and more connected.</h2>
-    <p>Talk to NiaCloud Technologies for a consultation, setup and customized solution for your business.</p>
-    <div class="cta-actions">
-      <a class="btn btn-gold" href="https://wa.me/254747316282"><i class="bi bi-whatsapp"></i> WhatsApp / Call 0747 316 282</a>
-      <a class="btn btn-outline" href="mailto:info@niacloud.co.ke"><i class="bi bi-envelope"></i> info@niacloud.co.ke</a>
-    </div>
-  </div>
+ <div class="wrap">
+  <div class="eyebrow">07 — Get Started</div>
+  <h2>Make your business smarter, faster and more connected.</h2>
+  <p>Talk to NiaCloud Technologies for a consultation, setup and customized solution for your business.</p>
+  <div class="actions center"><a class="btn gold" href="https://wa.me/254747316282"><i class="bi bi-whatsapp"></i> WhatsApp / Call 0747 316 282</a><a class="btn ghost" href="mailto:info@niacloud.co.ke"><i class="bi bi-envelope"></i> info@niacloud.co.ke</a></div>
+ </div>
 </section>
-
 </main>
 
 <footer>
-  <div class="wrap">
-    <div class="footer-top">
-      <div><div class="logo"><span class="logo-dot"></span>NiaCloud <b>Technologies</b></div><div class="footer-tags">AI • CLOUD • VOICE • SOFTWARE • AUTOMATION • BULK SMS</div></div>
-      <div class="footer-contact"><a class="footer-email" href="mailto:info@niacloud.co.ke">info@niacloud.co.ke</a><a class="footer-phone" href="tel:+254747316282">0747 316 282</a></div>
-    </div>
-    <div class="footer-bottom"><span>© 2026 NiaCloud Technologies</span><span>Smarter business communication.</span></div>
-  </div>
+ <div class="wrap">
+  <div class="footertop"><div><div class="logo"><span class="dot"></span>NiaCloud <em>Technologies</em></div><div class="footertags">AI • CLOUD • VOICE • SOFTWARE • AUTOMATION • BULK SMS</div></div><div class="contact"><a class="femail" href="mailto:info@niacloud.co.ke">info@niacloud.co.ke</a><a class="fphone" href="tel:+254747316282">0747 316 282</a></div></div>
+  <div class="footerbottom"><span>© 2026 NiaCloud Technologies</span><span>Connect. Automate. Grow.</span></div>
+ </div>
 </footer>
 
-<a class="float-wa" href="https://wa.me/254747316282" aria-label="Chat with NiaCloud on WhatsApp"><i class="bi bi-whatsapp"></i><span>Chat with us</span></a>
+<a class="float" href="https://wa.me/254747316282" aria-label="WhatsApp NiaCloud"><i class="bi bi-whatsapp"></i></a>
 
 <script>
-const menu=document.getElementById("menu"), mobile=document.getElementById("mobileNav");
-if(menu&&mobile){
-  menu.addEventListener("click",()=>{
-    const open=mobile.style.display==="block";
-    mobile.style.display=open?"none":"block";
-    menu.innerHTML=open?'<i class="bi bi-list"></i>':'<i class="bi bi-x-lg"></i>';
-  });
-  mobile.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{
-    mobile.style.display="none";menu.innerHTML='<i class="bi bi-list"></i>';
-  }));
-}
-const observer=new IntersectionObserver((entries)=>{
-  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("show");observer.unobserve(e.target)}});
+const menu=document.getElementById('menu'),mobile=document.getElementById('mobile');
+menu.addEventListener('click',()=>{
+ const open=mobile.style.display==='block';
+ mobile.style.display=open?'none':'block';
+ menu.innerHTML=open?'<i class="bi bi-list"></i>':'<i class="bi bi-x-lg"></i>';
+});
+mobile.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+ mobile.style.display='none';menu.innerHTML='<i class="bi bi-list"></i>';
+}));
+const io=new IntersectionObserver(entries=>{
+ entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}});
 },{threshold:.08});
-document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 </script>
 </body>
 </html>
